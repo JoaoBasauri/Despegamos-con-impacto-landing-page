@@ -1,20 +1,23 @@
 import Image from "next/image";
 import Participantes from './participantes'
 import { FaArrowAltCircleDown, FaPen, FaFile } from "react-icons/fa"
-import { FaChevronUp } from "react-icons/fa"
+import { FaChevronUp, FaCheckCircle } from "react-icons/fa"
 
 export default function Landing() {
     return (
         <div className="font-sans text-gray-900 bg-[#F4F2F9]">
 
             {/* Hero Section */}
-            <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-15 text-gray-900">
-                <div className="flex flex-col md:flex-row justify-center items-center pb-10 gap-8">
-                    <h1 className="font-bold text-4xl">Postulaciones</h1>
-                    <a href="/despegamos-con-impacto/pdf/Bases del concurso - Despegamos con Impacto.pdf" target="_blank"
-                        className="flex items-center gap-2 uppercase bg-[#ffaf0100] border-solid border-2 hover:text-white font-semibold px-8 py-5 rounded-full hover:bg-gray-900 transition">
-                        <FaArrowAltCircleDown size={24} />
-                        Descarga las bases
+            <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-10 text-gray-900">
+                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5   md:mb-10 gap-1 md:gap-8">
+                    <h1 className="font-bold text-2xl md:text-4xl">Postulaciones</h1>
+                    <a
+                        href="/despegamos-con-impacto/pdf/Bases del concurso - Despegamos con Impacto.pdf"
+                        target="_blank"
+                        className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                    >
+                        <FaArrowAltCircleDown className="text-lg md:text-2xl" />
+                        <span className="text-sm md:text-base">Descarga las bases</span>
                     </a>
                 </div>
 
@@ -24,7 +27,7 @@ export default function Landing() {
                         width={500}
                         height={500}
                         alt="Despegamos con impacto"
-                        className="mb-6 md:mb-0"
+                        className="-mb-10 md:mb-0"
                     />
                     <div className="flex-row items-center justify-center text-justify">
                         <p className="text-m md:text-m max-w-2xl mx-auto mb-8">
@@ -57,6 +60,12 @@ export default function Landing() {
                     </a>
                     <a href="#participante" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Participantes
+                    </a>
+                    <a href="#postulacion" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Postulación
+                    </a>
+                    <a href="#mentor" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Mentor
                     </a>
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
@@ -227,7 +236,7 @@ export default function Landing() {
                             2026) en temas de finanzas e impacto.</p>
                         <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
                     </div>
-                    <div className="text-lg text-white max-w-110 mb-2">
+                    <div className="text-lg text-white max-w-110 mb-2 row-start-5 md:row-auto">
                         <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</p>
                         <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
@@ -236,10 +245,138 @@ export default function Landing() {
                     </div>
                 </div>
             </section >
-            {/* Participantes */}
+            {/* Participantes Section*/}
             < section id="participante" className="py-16 px-6 md:px-20 bg-[#F4F2F9]">
                 <Participantes />
             </section >
+
+            {/* Postulacion Section*/}
+            <section id="postulacion" className="py-16 px-6 md:-mt-16 md:px-20 bg-[#1B0088] text-justify">
+                <h2 className="text-3xl font-bold mb-6 text-[#ff3e78]">Conoce nuestro proceso de postulación</h2>
+                <div className="md:grid grid-flow-col grid-rows-3 text-white gap-2 gap-x-15 mx-5">
+                    <div>
+                        <h3 className="font-bold text-2xl mt-5">Paso 1: Identifica un reto interno. </h3>
+                        <p className="text-lg">Reflexiona junto a tu equipo sobre los principales desafíos institucionales que enfrentan
+                            actualmente y que quisieran fortalecer a través de esta beca. </p>
+                    </div>
+                    <div className="md:-mt-10">
+                        <h3 className="font-bold text-2xl mt-5">Paso 2: Completa el formulario de postulación.</h3>
+                        <p className="text-lg">Cuéntanos sobre tu organización, sus proyectos y el reto institucional identificado. </p>
+                        <div className="flex flex-col mx-auto md:ml-5">
+                            <h4 className="text-xl font-semibold mt-5">Importante:</h4>
+                            <p className="text-lg">Te recomendamos descargar previamente la Guía de Preguntas del
+                                Formulario, ya que el sistema no guarda el avance.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-2xl mt-5">Paso 3: Revisa tu correo. </h3>
+                        <p className="text-lg">Una vez completado el formulario, recibirás un correo de confirmación</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-2xl mt-5">Nota: </h3>
+                        <p className="text-lg">Todas las organizaciones postulantes pasarán automáticamente a formar parte de la Red
+                            OLI, sin necesidad de realizar el proceso de postulación adicional.
+                            La postulación al programa Despegamos con Impacto es completamente virtual y gratuita. </p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-2xl mt-5 md:-mt-5">Criterios de evaluación</h3>
+                        <div className="-indent-7 ml-5 md:ml-15 text-xl text-left">
+                            <li>Criterio 1: Capacidad de gestión y sostenibilidad </li>
+                            <li>Criterio 2: Claridad de misión y objetivos de la ONG </li>
+                            <li>Criterio 3: Potencial de impacto social </li>
+                            <li>Criterio 4: Necesidad y justificación del fortalecimiento </li>
+                            <li>Criterio 5: Compromiso y apertura al fortalecimiento</li>
+                        </div>
+                    </div>
+                </div>
+                <div className="mx-auto flex flex-col md:flex-row items-center justify-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl object-center max-w-150">
+                    <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
+                        target="_blank"
+                        className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                        <FaPen size={13} />
+                        Inscribete Aquí
+                    </a>
+                    <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
+                        target="_blank"
+                        className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                        <FaFile size={13} />
+                        Guia de preguntas
+                    </a>
+                </div>
+            </section>
+
+            {/*Mentor Section*/}
+            <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
+                <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">¿Deseas ser Mentor?</h2>
+                <div className="flex justify-center items-center">
+                    <p className="justify-center text-lg text-gray-900 max-w-3xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
+                        organización finalista en la identificación, diseño y puesta en marcha de un proyecto de
+                        fortalecimiento institucional, brindando guía técnica, perspectiva externa y soporte en la
+                        toma de decisiones clave durante el proceso de acompañamiento.</p>
+                </div>
+                <div className="md:grid grid-cols-2 grid-rows-[50_auto] justify-center items-start md:mx-25">
+                    <div className="row-start-1 text-[#FF3E78] font-semibold text-3xl  mb-10 md:mr-10">
+                        <h3>¿A quiénes buscamos?</h3>
+                    </div>
+                    <div className="flex flex-col gap-3 row-start-2 md:mr-10 text-gray-900">
+                        <li>Profesionales con formación relacionada a alguna de estas áreas: administración,
+                            gestión de organizaciones sociales, economía, políticas públicas, psicología
+                            organizacional, o carreras afines</li>
+                        <li>Profesionales con posgrado o especialización en gestión de proyectos sociales,
+                            fortalecimiento institucional, innovación social, desarrollo organizacional u otros
+                            campos afines.  </li>
+                        <li>Profesionales con mínimo 5 años de experiencia profesional en organizaciones
+                            sociales, cooperación internacional, consultoría a ONGs o empresas con enfoque
+                            social. </li>
+                        <li>Personas con al menos 2 años de experiencia directa acompañando procesos de
+                            fortalecimiento organizacional, planificación estratégica o desarrollo institucional</li>
+                        <li>Se valorará experiencia previa en mentoría o facilitación de procesos
+                            participativos (no excluyente). </li>
+                        <p className="my-5">Nuestros mentores de impacto acompañarán a nuestros finalistas en la preparación del
+                            proyecto de fortalecimiento institucional que presentarán en la Evaluación Final. Además,
+                            ayudarán a nuestros finalistas a definir una hoja de ruta básica para la implementación de
+                            dicho proyecto e identificar sus desafíos internos y posibles caminos de mejora.  </p>
+                    </div>
+                    <div className="row-start-1 text-[#FF3E78] font-semibold text-3xl  mb-10 md:mr-10">
+                        <h3>¿Qué te llevas al ser mentor? </h3>
+                    </div>
+                    <div className="row-start-2 flex flex-col gap-3 md:mr-10 text-gray-900">
+                        <p>Nuestros mentores de impacto acompañarán a nuestros finalistas en la preparación del
+                            proyecto de fortalecimiento institucional que presentarán en la Evaluación Final. Además,
+                            ayudarán a nuestros finalistas a definir una hoja de ruta básica para la implementación de
+                            dicho proyecto e identificar sus desafíos internos y posibles caminos de mejora.  </p>
+                        <li>Profesionales con formación relacionada a alguna de estas áreas: administración,
+                            gestión de organizaciones sociales, economía, políticas públicas, psicología
+                            organizacional, o carreras afines</li>
+                        <li>Profesionales con posgrado o especialización en gestión de proyectos sociales,
+                            fortalecimiento institucional, innovación social, desarrollo organizacional u otros
+                            campos afines.  </li>
+                        <li>Profesionales con mínimo 5 años de experiencia profesional en organizaciones
+                            sociales, cooperación internacional, consultoría a ONGs o empresas con enfoque
+                            social. </li>
+                        <li>Personas con al menos 2 años de experiencia directa acompañando procesos de
+                            fortalecimiento organizacional, planificación estratégica o desarrollo institucional</li>
+                        <li>Se valorará experiencia previa en mentoría o facilitación de procesos
+                            participativos (no excluyente). </li>
+                        <li>Profesionales con mínimo 5 años de experiencia profesional en organizaciones
+                            sociales, cooperación internacional, consultoría a ONGs o empresas con enfoque
+                            social. </li>
+                        <li>Personas con al menos 2 años de experiencia directa acompañando procesos de
+                            fortalecimiento organizacional, planificación estratégica o desarrollo institucional</li>
+                        <li>Se valorará experiencia previa en mentoría o facilitación de procesos
+                            participativos (no excluyente). </li>
+                    </div>
+                </div>
+                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 my-5 md:mb-10 gap-1 md:gap-8">
+                    <h1 className="font-bold text-1xl md:text-3xl">POSTULA COMO MENTOR/A AQUÍ:</h1>
+                    <a href="https://forms.gle/kmoM871LEHV1pmBq9"
+                        target="_blank"
+                        className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition">
+                        <FaPen size={13} />
+                        Inscribete Aquí
+                    </a>
+                </div>
+            </section>
 
             <a
                 href="#inicio"

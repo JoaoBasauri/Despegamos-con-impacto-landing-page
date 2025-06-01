@@ -102,21 +102,6 @@ export default function participantes() {
                     </div>
                 </div>
             </div>
-
-            <div className="mx-auto flex flex-col md:flex-row items-center justify-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl object-center max-w-150">
-                <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
-                    target="_blank"
-                    className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
-                    <FaPen size={13} />
-                    Inscribete Aquí
-                </a>
-                <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
-                    target="_blank"
-                    className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
-                    <FaFile size={13} />
-                    Guia de preguntas
-                </a>
-            </div>
         </div>
     );
 }
