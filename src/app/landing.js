@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Participantes from './participantes'
 import { FaArrowAltCircleDown, FaPen, FaFile } from "react-icons/fa"
-import { FaChevronUp, FaCheckCircle } from "react-icons/fa"
+import { FaChevronUp } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 export default function Landing() {
     return (
@@ -487,8 +488,30 @@ export default function Landing() {
             > <FaChevronUp></FaChevronUp> </a>
 
             {/* Footer */}
-            < footer className="bg-[#F4F2F9] py-6 text-center text-sm text-gray-600" >
-                © Todos los derechos reservados 2025. Fundación Oli
+            < footer className="bg-[#F4F2F9] flex justify-between items-center text-sm text-gray-600" >
+                <div className="ml-5 font-extrabold text-xl">
+                    <h2 className="ml-5 mb-2">REDES SOCIALES</h2>
+                    <div className="flex flex-row gap-5 mb-5 ml-5">
+                        <a
+                            href="https://www.facebook.com/FundacionOLI"
+                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                        > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
+                        <a
+                            href="https://www.instagram.com/fundacionoli/"
+                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                        > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
+                        <a
+                            href="https://www.linkedin.com/company/fundación-oli/"
+                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                        > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+                    </div>
+                </div>
+                <div>
+                    <p>© Todos los derechos reservados 2025. Fundación Oli</p>
+                </div>
+                <div className="mr-5">
+                    <p>Desarrollado por Joao Basauri</p>
+                </div>
             </footer >
         </div >
     );
