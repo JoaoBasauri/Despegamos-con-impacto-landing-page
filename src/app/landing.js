@@ -388,77 +388,80 @@ export default function Landing() {
             <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#1B0088] text-justify">
                 <h2 className="text-3xl font-bold mb-6 text-[#FF3E78] ml-0 md:ml-110 text-left">Etapas del concurso</h2>
                 <div className="overflow-x-auto p-4">
-                    <table className="mx-auto min-w-250 text-sm bg-[#F4F2F9] border-2 border-black rounded-lg overflow-hidden">
-                        <thead className="bg-[#FF3E78] text-white">
-                            <tr>
-                                <th className="py-3 px-4 text-left">Actividad</th>
-                                <th className="py-3 px-4 text-left">Fecha inicio</th>
-                                <th className="py-3 px-4 text-left">Fecha término</th>
-                                <th className="py-3 px-4 text-left">Modalidad</th>
-                            </tr>
-                        </thead>
-                        <tbody className="text-gray-900">
-
-                            {/* Proceso de convocatoria */}
-                            <tr className="bg-[#3E0078] text-white">
-                                <td colSpan="4" className="py-2 px-4 font-semibold italic">Proceso de convocatoria</td>
-                            </tr>
-                            {[
-                                ['Lanzamiento del concurso', '8 de junio', '-', 'Presencial'],
-                                ['Postulaciones de organizaciones', '8 de junio', '19 de julio', 'Virtual'],
-                                ['Postulación de mentores', '8 de junio', '19 de julio', 'Virtual'],
-                                ['Evaluación de postulaciones', '20 de julio', '10 de agosto', 'Virtual'],
-                                ['Publicación de finalistas y mentores', '13 de agosto', '13 de agosto', 'Virtual'],
-                            ].map((row, i) => (
-                                <tr key={`convocatoria-${i}`} className="border-t border-black">
-                                    {row.map((cell, j) => (
-                                        <td key={j} className="py-2 px-4">{cell}</td>
-                                    ))}
+                    <div className="rounded-xl overflow-hidden border-2 border-black">
+                        <table className="min-w-full text-sm md:text-base bg-[#F4F2F9]">
+                            <thead className="bg-[#FF3E78] text-white">
+                                <tr>
+                                    <th className="py-3 px-4 text-left">Actividad</th>
+                                    <th className="py-3 px-4 text-left">Fecha inicio</th>
+                                    <th className="py-3 px-4 text-left">Fecha término</th>
+                                    <th className="py-3 px-4 text-left">Modalidad</th>
                                 </tr>
-                            ))}
+                            </thead>
+                            <tbody className="text-[#1B0088]">
 
-                            {/* Capacitación y acompañamiento */}
-                            <tr className="bg-[#3E0078] text-white">
-                                <td colSpan="4" className="py-2 px-4 font-semibold italic">
-                                    Capacitación y acompañamiento (mentores + finalistas)
-                                </td>
-                            </tr>
-                            {[
-                                ['Kick off mentores', '18 de agosto', '24 de agosto', 'Virtual'],
-                                ['Bienvenida finalistas', '18 de agosto', '24 de agosto', 'Virtual'],
-                                ['Sesión Módulo 1', '25 de agosto', '31 de agosto', 'Virtual'],
-                                ['Semana de mentorías 1', '1 de septiembre', '7 de septiembre', 'Virtual'],
-                                ['Sesión Módulo 2', '8 de septiembre', '14 de septiembre', 'Virtual'],
-                                ['Semana de mentorías 2', '15 de septiembre', '21 de septiembre', 'Virtual'],
-                                ['Sesión Módulo 3', '22 de septiembre', '28 de septiembre', 'Virtual'],
-                                ['Semana de mentoría 3', '29 de septiembre', '5 de octubre', 'Virtual'],
-                                ['Semana de mentoría 4', '6 de octubre', '12 de octubre', 'Virtual'],
-                                ['Semana de mentoría 5', '13 de octubre', '17 de octubre', 'Virtual'],
-                            ].map((row, i) => (
-                                <tr key={`capacitacion-${i}`} className="border-t border-black">
-                                    {row.map((cell, j) => (
-                                        <td key={j} className="py-2 px-4">{cell}</td>
-                                    ))}
+                                {/* Proceso de convocatoria */}
+                                <tr className="bg-[#3E0078] text-white">
+                                    <td colSpan="4" className="py-2 px-4 font-semibold italic">Proceso de convocatoria</td>
                                 </tr>
-                            ))}
+                                {[
+                                    ['Lanzamiento del concurso', '8 de junio', '-', 'Presencial'],
+                                    ['Postulaciones de organizaciones', '8 de junio', '19 de julio', 'Virtual'],
+                                    ['Postulación de mentores', '8 de junio', '19 de julio', 'Virtual'],
+                                    ['Evaluación de postulaciones', '20 de julio', '10 de agosto', 'Virtual'],
+                                    ['Publicación de finalistas y mentores', '13 de agosto', '13 de agosto', 'Virtual'],
+                                ].map((row, i) => (
+                                    <tr key={`convocatoria-${i}`} className="border-t border-black">
+                                        {row.map((cell, j) => (
+                                            <td key={j} className="py-2 px-4">{cell}</td>
+                                        ))}
+                                    </tr>
+                                ))}
 
-                            {/* Selección de ganadores */}
-                            <tr className="bg-[#3E0078] text-white">
-                                <td colSpan="4" className="py-2 px-4 font-semibold font-sans">Selección de ganadores</td>
-                            </tr>
-                            {[
-                                ['Presentación de proyectos', '18 de octubre', '-', 'Presencial'],
-                                ['Ceremonia de premiación', '29 de octubre', '-', 'Presencial'],
-                            ].map((row, i) => (
-                                <tr key={`ganadores-${i}`} className="border-t border-black">
-                                    {row.map((cell, j) => (
-                                        <td key={j} className="py-2 px-4">{cell}</td>
-                                    ))}
+                                {/* Capacitación y acompañamiento */}
+                                <tr className="bg-[#3E0078] text-white">
+                                    <td colSpan="4" className="py-2 px-4 font-semibold italic">
+                                        Capacitación y acompañamiento (mentores + finalistas)
+                                    </td>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                                {[
+                                    ['Kick off mentores', '18 de agosto', '24 de agosto', 'Virtual'],
+                                    ['Bienvenida finalistas', '18 de agosto', '24 de agosto', 'Virtual'],
+                                    ['Sesión Módulo 1', '25 de agosto', '31 de agosto', 'Virtual'],
+                                    ['Semana de mentorías 1', '1 de septiembre', '7 de septiembre', 'Virtual'],
+                                    ['Sesión Módulo 2', '8 de septiembre', '14 de septiembre', 'Virtual'],
+                                    ['Semana de mentorías 2', '15 de septiembre', '21 de septiembre', 'Virtual'],
+                                    ['Sesión Módulo 3', '22 de septiembre', '28 de septiembre', 'Virtual'],
+                                    ['Semana de mentoría 3', '29 de septiembre', '5 de octubre', 'Virtual'],
+                                    ['Semana de mentoría 4', '6 de octubre', '12 de octubre', 'Virtual'],
+                                    ['Semana de mentoría 5', '13 de octubre', '17 de octubre', 'Virtual'],
+                                ].map((row, i) => (
+                                    <tr key={`capacitacion-${i}`} className="border-t border-black">
+                                        {row.map((cell, j) => (
+                                            <td key={j} className="py-2 px-4">{cell}</td>
+                                        ))}
+                                    </tr>
+                                ))}
+
+                                {/* Selección de ganadores */}
+                                <tr className="bg-[#3E0078] text-white">
+                                    <td colSpan="4" className="py-2 px-4 font-semibold italic">Selección de ganadores</td>
+                                </tr>
+                                {[
+                                    ['Presentación de proyectos', '18 de octubre', '-', 'Presencial'],
+                                    ['Ceremonia de premiación', '29 de octubre', '-', 'Presencial'],
+                                ].map((row, i) => (
+                                    <tr key={`ganadores-${i}`} className="border-t border-black">
+                                        {row.map((cell, j) => (
+                                            <td key={j} className="py-2 px-4">{cell}</td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
             </section>
 
             {/*FAQ section */}
