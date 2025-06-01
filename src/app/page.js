@@ -43,22 +43,25 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center pb-10">
-          <a href="#proposito" className="inline-block bg-[#FFB001] text-white font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
+        <div className="flex justify-center items-center gap-5 mb-5">
+          <a href="#proposito" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
             Propósito
           </a>
+          <a href="#categoria" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
+            Categorias
+          </a>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-80">
-          <div className="flex flex-col md:flex-row items-center gap-2 bg-[#FFB001] rounded-full">
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
+          <div className="flex flex-col md:flex-row items-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl">
             <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
               target="_blank"
-              className="flex items-center gap-2 my-2 ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+              className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
               <FaPen size={13} />
               Inscribete Aquí
             </a>
             <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
               target="_blank"
-              className="flex items-center gap-2 my-2 mr-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+              className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
               <FaFile size={13} />
               Guia de preguntas
             </a>
@@ -82,20 +85,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Convocatoria Section */}
-      <section id="proposito" className="py-16 px-6 md:px-20 bg-[#ff3e78]">
-        <h2 className="text-3xl font-bold mb-6 text-[#1B0088]">Propósito del programa</h2>
-        <div>
+      {/* Proposito Section */}
+      <section id="proposito" className="py-16 px-6 md:px-20 bg-[#1B0088]">
+        <h2 className="text-3xl font-bold mb-6 text-[#ff3e78] ml-0 md:ml-110">Propósito del programa</h2>
+        <div className="flex flex-col items-center justify-center gap-5">
           <p className="text-lg text-white leading-relaxed max-w-3xl">
             Despegamos con Impacto busca fortalecer a ONGs peruanas para que puedan despegar su
             impacto social, a través del fortalecimiento institucional, brindándoles herramientas clave
             para:
           </p>
-          <p className="text-lg text-white leading-relaxed max-w-3xl">
-            ● Mejorar su transparencia financiera,
-            ● Fortalecer su capacidad de evaluar el impacto de sus acciones,
-            ● Incrementar su sostenibilidad a largo plazo.
-          </p>
+
+          <div className="grid md:grid-cols-3 md:grid-rows-[200_100] justify-center justify-items-center items-start text-wrap">
+            <Image
+              src={"/despegamos-con-impacto/TF-icon.svg"}
+              width={400}
+              height={400}
+              alt="Transparencia Financiera"
+              className="mb-6 md:mb-0"
+            />
+            <Image
+              src={"/despegamos-con-impacto/EC-icon.svg"}
+              width={400}
+              height={400}
+              alt="Transparencia Financiera"
+              className="mb-6 md:mb-0 row-start-3 md:row-auto"
+            />
+            <Image
+              src={"/despegamos-con-impacto/ST-icon.svg"}
+              width={400}
+              height={400}
+              alt="Transparencia Financiera"
+              className="mb-6 md:mb-0 row-start-5 md:row-auto"
+            />
+            <p className="text-lg text-white max-w-xs text-wrap mb-2 col-auto">Mejorar su transparencia financiera</p>
+            <p className="text-lg text-white max-w-xs text-wrap mb-2 col-auto">Fortalecer su capacidad de evaluar el impacto de sus acciones</p>
+            <p className="text-lg text-white max-w-xs text-wrap mb-2 col-auto">Incrementar su sostenibilidad a largo plazo</p>
+          </div>
+
           <p className="text-lg text-white leading-relaxed max-w-3xl">
             En esta primera edición, Despegamos con Impacto otorgará un capital semilla, un proceso
             de formación técnica y un acompañamiento personalizado a través de mentores expertos.
@@ -103,14 +129,30 @@ export default function Home() {
         </div>
       </section >
 
-      {/* Requisitos Section */}
-      < section id="requisitos" className="py-16 px-6 md:px-20 bg-[#F4F2F9]" >
-        <h2 className="text-3xl font-bold mb-6 text-[#1B0088]">Requisitos</h2>
-        <ul className="list-disc list-inside text-lg space-y-2 max-w-3xl">
-          <li>Ser mayor de 18 años</li>
-          <li>Tener un proyecto o idea relacionada con la salud</li>
-          <li>Disponibilidad para participar en actividades de capacitación</li>
-        </ul>
+      {/* Categoria Section */}
+      < section id="categoria" className="py-16 px-6 md:px-20 bg-[#F4F2F9]" >
+        <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110">Conoce nuestras Categorias</h2>
+        
+        <div className="grid md:grid-cols-2 md:grid-rows-[200_100] justify-center justify-items-center items-start text-wrap">
+            <Image
+              src={"/despegamos-con-impacto/TF-icon.svg"}
+              width={400}
+              height={400}
+              alt="Transparencia Financiera"
+              className="mb-6 md:mb-0"
+            />
+            <Image
+              src={"/despegamos-con-impacto/EC-icon.svg"}
+              width={400}
+              height={400}
+              alt="Transparencia Financiera"
+              className="mb-6 md:mb-0 row-start-3 md:row-auto"
+            />
+            <p className="text-lg text-gray-900 max-w-xs text-wrap mb-2 col-auto">Mejorar su transparencia financiera</p>
+            <p className="text-lg text-gray-900 max-w-xs text-wrap mb-2 col-auto">Fortalecer su capacidad de evaluar el impacto de sus acciones</p>
+          </div>
+
+        
       </section >
 
       {/* Testimonios Section */}
