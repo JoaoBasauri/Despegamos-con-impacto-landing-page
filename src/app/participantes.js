@@ -46,14 +46,14 @@ export default function participantes() {
                     <div>
                         <li>Ser una organización debidamente registrada en el Perú o en el extranjero con
                             operaciones en Perú.</li>
-                        <li>Tener al menos 2 años de operaciones continuas. </li>
-                        <li>Haber ejecutado al menos 1 proyecto social activo en el último año, entendido
+                        <li>Tener al menos <a className="font-semibold">2 años de operaciones continuas.</a></li>
+                        <li>Haber ejecutado al menos <a className="font-semibold">1 proyecto social activo en el último año</a>, entendido
                             como una intervención en comunidad de forma continua. </li>
-                        <li>Haber ejecutado al menos 1 proyecto financiado por terceros, ya sea a través de
+                        <li>Haber ejecutado al menos <a className="font-bold">1 proyecto financiado por terceros</a>, ya sea a través de
                             cooperación internacional, empresa privada o fondos estatales. </li>
-                        <li>Contar con un equipo activo de al menos 3 personas en roles de gestión o dirección
+                        <li>Contar con un equipo activo de al menos <a className="font-semibold">3 personas</a> en roles de gestión o dirección
                             (pueden ser voluntarios o no remunerados). </li>
-                        <li>No contar aún con procesos formales o consolidados en contabilidad y/o
+                        <li><a className="font-semibold">No contar aún con procesos formales o consolidados</a> en contabilidad y/o
                             medición de impacto. </li>
                         <li>Completar el formulario de postulación y adjuntar los documentos requeridos.</li>
                         <li>Comprometerse a participar en el proceso de mentoría y acompañamiento (agosto -
@@ -88,14 +88,14 @@ export default function participantes() {
                     <div>
                         <li>Ser una organización debidamente registrada en el Perú o en el extranjero con
                             operaciones en Perú.</li>
-                        <li>Tener al menos 5 años de operaciones continuas.</li>
-                        <li>Haber implementado al menos 3 proyectos sociales activos en los últimos 12
-                            meses, con intervención comunitaria continua.</li>
-                        <li>Contar con un equipo activo con al menos 1 persona a tiempo completo en roles
+                        <li>Tener al menos <a className="font-semibold">5 años de operaciones continuas.</a></li>
+                        <li>Haber implementado al menos <a className="font-semibold">3 proyectos sociales activos en los últimos 12
+                        meses</a>, con intervención comunitaria continua.</li>
+                        <li>Contar con un equipo activo con al menos <a className="font-semibold">1 persona a tiempo completo</a> en roles
                             de gestión o dirección.</li>
-                        <li>Contar con procesos contables activos y algún mecanismo de medición de
-                            impacto en uso (aunque sean básicos).</li>
-                        <li>Mostrar interés en escalar, innovar o diversificar sus fuentes de financiamiento.</li>
+                        <li>Contar con procesos <a className="font-bold">contables activos y algún mecanismo de medición de
+                        impacto en uso</a> (aunque sean básicos).</li>
+                        <li>Mostrar interés en <a className="font-semibold">escalar, innovar o diversificar sus fuentes de financiamiento.</a></li>
                         <li>Completar el formulario de postulación y adjuntar los documentos requeridos.</li>
                         <li>Comprometerse a participar en el proceso de mentoría y acompañamiento (agosto -
                             octubre 2025).</li>
