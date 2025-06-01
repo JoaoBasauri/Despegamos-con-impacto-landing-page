@@ -464,6 +464,17 @@ export default function Landing() {
             {/*FAQ section */}
             <section id="faq" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
                 <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">FAQ</h2>
+                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5   md:mb-10 gap-1 md:gap-8">
+                    <h1 className="font-bold text-2xl md:text-2xl">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
+                    <a
+                        href="/despegamos-con-impacto/pdf/faq.pdf"
+                        target="_blank"
+                        className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                    >
+                        <FaArrowAltCircleDown className="text-lg md:text-2xl" />
+                        <span className="text-sm md:text-base">FAQ</span>
+                    </a>
+                </div>
             </section>
 
             <a
