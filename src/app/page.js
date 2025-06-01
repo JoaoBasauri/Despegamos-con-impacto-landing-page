@@ -95,7 +95,7 @@ export default function Home() {
             para:
           </p>
 
-          <div className="grid md:grid-cols-3 md:grid-rows-[200_100] justify-center justify-items-center items-start text-wrap">
+          <div className="grid md:grid-cols-3 md:grid-rows-[200_100] justify-center justify-items-center items-start ">
             <Image
               src={"/despegamos-con-impacto/TF-icon.svg"}
               width={400}
@@ -132,27 +132,49 @@ export default function Home() {
       {/* Categoria Section */}
       < section id="categoria" className="py-16 px-6 md:px-20 bg-[#F4F2F9]" >
         <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110">Conoce nuestras Categorias</h2>
-        
-        <div className="grid md:grid-cols-2 md:grid-rows-[200_100] justify-center justify-items-center items-start text-wrap">
-            <Image
-              src={"/despegamos-con-impacto/TF-icon.svg"}
-              width={400}
-              height={400}
-              alt="Transparencia Financiera"
-              className="mb-6 md:mb-0"
-            />
-            <Image
-              src={"/despegamos-con-impacto/EC-icon.svg"}
-              width={400}
-              height={400}
-              alt="Transparencia Financiera"
-              className="mb-6 md:mb-0 row-start-3 md:row-auto"
-            />
-            <p className="text-lg text-gray-900 max-w-xs text-wrap mb-2 col-auto">Mejorar su transparencia financiera</p>
-            <p className="text-lg text-gray-900 max-w-xs text-wrap mb-2 col-auto">Fortalecer su capacidad de evaluar el impacto de sus acciones</p>
-          </div>
 
-        
+        <div className="grid md:grid-cols-[500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
+          <h3 className="text-xl font-semibold mb-6 text-[#1B0088] ">Categoria 1: Despegue inicial</h3>
+          <h3 className="text-xl font-semibold mb-6 text-[#1B0088] row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
+          <Image
+            src={"/despegamos-con-impacto/despegue.svg"}
+            width={400}
+            height={400}
+            alt="Transparencia Financiera"
+            className="mb-6 md:mb-0"
+          />
+          <Image
+            src={"/despegamos-con-impacto/vuelo.svg"}
+            width={400}
+            height={400}
+            alt="Transparencia Financiera"
+            className="mb-6 md:mb-0 row-start-5 md:row-auto"
+          />
+          <div className="text-justify">
+            <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+              Dirigida a ONGs en etapa de consolidación que necesitan fortalecer sus capacidades
+              internas para operar con mayor transparencia, eficacia y sostenibilidad.
+            </p>
+            <p className="text-lg text-gray-900 max-w-110 mb-2">
+              Esta categoría está pensada para organizaciones que ya se encuentran en marcha, pero
+              requieren orientación y herramientas para construir una base institucional sólida que les
+              permita sostenerse en el tiempo.
+            </p>
+          </div>
+          <div className="text-justify  ">
+            <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+              Pensada para ONGs con un mayor grado de consolidación que buscan profesionalizar sus
+              procesos o escalar su impacto, especialmente en medición, comunicación y sostenibilidad
+              financiera.
+            </p>
+            <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+              Esta categoría busca acompañar a organizaciones que ya tienen una estructura
+              consolidada, pero desean llevar su gestión y comunicación de impacto a un siguiente nivel.
+            </p>
+          </div>
+        </div>
+
+
       </section >
 
       {/* Testimonios Section */}
