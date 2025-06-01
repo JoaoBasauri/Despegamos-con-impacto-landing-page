@@ -50,6 +50,9 @@ export default function Home() {
           <a href="#categoria" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
             Categorias
           </a>
+          <a href="#premio" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
+            Premios
+          </a>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
           <div className="flex flex-col md:flex-row items-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl">
@@ -177,21 +180,54 @@ export default function Home() {
 
       </section >
 
-      {/* Testimonios Section */}
-      < section id="testimonios" className="py-16 px-6 md:px-20 bg-white" >
-        <h2 className="text-3xl font-bold mb-6 text-[#1B0088]">Testimonios</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+      {/* Premio Section */}
+      < section id="premio" className="py-16 px-6 md:px-20 bg-[#1B0088] text-justify" >
+        <h2 className="text-3xl font-bold mb-6 text-[#ff3e78]">¿Qué puedes ganar? </h2>
+        <h3 className="text-xl font-semibold mb-6 text-[#ff3e78]">¡Serán 10 los finalistas!</h3>
+        <p className="text-lg text-white max-w-200 mb-8  ">
+          Cinco organizaciones por categoría serán seleccionadas para acceder a un proceso
+          exclusivo de fortalecimiento que incluye:
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-8 text-left my-12">
           <div className="bg-[#35A1F4] text-white p-4 rounded shadow">
-            <p>“Gracias a Impulsar Salud, nuestro proyecto llegó a cientos de pacientes.”</p>
-            <p className="mt-2 font-semibold">— Ana M., participante 2023</p>
+            <p className="font-semibold">Capacitacion especializada</p>
+            <li className="mt-2 ">Transparencia financiera y contable.</li >
+            <li className="mt-2 ">Evaluación de impacto de proyectos sociales.</li >
+            <li className="mt-2 ">Comunicación efectiva para la movilización de recursos </li >
           </div>
           <div className="bg-[#233E8B] text-white p-4 rounded shadow">
-            <p>“La mentoría y el apoyo fueron clave para profesionalizar nuestra idea.”</p>
-            <p className="mt-2 font-semibold">— Luis R., participante 2022</p>
+            <p className="font-semibold">Mentoria personalizada</p>
+            <p className="mt-2">durante dos meses con profesionales expertos</p>
           </div>
           <div className="bg-[#3AB85C] text-white p-4 rounded shadow">
-            <p>“Una experiencia transformadora tanto personal como profesionalmente.”</p>
-            <p className="mt-2 font-semibold">— Clara F., ganadora 2021</p>
+            <p className="font-semibold">Visibilizacíon de su trabajo e impacto</p>
+            <p className="mt-2">a través de los canales de comunicación de
+              Fundación OLI y LATAM Airlines. </p>
+          </div>
+        </div>
+
+        <p className="text-lg text-white max-w-200 mb-8">
+          Además, cada finalista tendrá la oportunidad de presentar su proyecto de fortalecimiento
+          frente a nuestro Comité de Expertos y ser acreedor del premio de su categoría.
+        </p>
+
+        <div className="grid md:grid-cols-[600_600] md:grid-rows-[50_300]  justify-items-center justify-center items-center">
+          <h3 className="text-xl font-semibold my-6 text-white ">Categoria 1: Despegue inicial</h3>
+          <h3 className="text-xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
+          <div className="text-lg text-white max-w-110 mb-2">
+            <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 15,000</a> para el fortalecimiento institucional o ejecución de un
+              proyecto de mejora organizacional.</p>
+            <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
+              2026) en temas de finanzas e impacto.</p>
+            <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
+          </div>
+          <div className="text-lg text-white max-w-110 mb-2">
+            <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
+              proyecto de mejora organizacional.</p>
+            <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
+              2026) en temas de finanzas e impacto.</p>
+            <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
           </div>
         </div>
       </section >
