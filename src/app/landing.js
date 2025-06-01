@@ -473,7 +473,7 @@ export default function Landing() {
                     <a
                         href="/despegamos-con-impacto/pdf/faq.pdf"
                         target="_blank"
-                        className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                        className="flex items-center gap-1 mt-5 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
                     >
                         <FaArrowAltCircleDown className="text-lg md:text-2xl" />
                         <span className="text-sm md:text-base">FAQ</span>
@@ -483,13 +483,13 @@ export default function Landing() {
 
             <a
                 href="#inicio"
-                className="fixed bottom-10 right-10 z-50 bg-[#FFB001] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
+                className="fixed bottom-10 right-5 md:right-10 z-50 bg-[#FFB001] text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
                 aria-label="Ir al inicio"
             > <FaChevronUp></FaChevronUp> </a>
 
             {/* Footer */}
-            < footer className="bg-[#F4F2F9] flex justify-between items-center text-sm text-gray-600" >
-                <div className="ml-5 font-extrabold text-xl">
+            < footer className="bg-[#F4F2F9] md:flex justify-between items-center text-sm text-gray-600" >
+                <div className=" ml-2 md:ml-5 font-extrabold text-xl">
                     <h2 className="ml-5 mb-2">REDES SOCIALES</h2>
                     <div className="flex flex-row gap-5 mb-5 ml-5">
                         <a
@@ -507,10 +507,10 @@ export default function Landing() {
                     </div>
                 </div>
                 <div>
-                    <p>© Todos los derechos reservados 2025. Fundación Oli</p>
+                    <p className="md:text-normal text-right">© Todos los derechos reservados 2025. Fundación Oli</p>
                 </div>
-                <div className="mr-5">
-                    <p>Desarrollado por Joao Basauri</p>
+                <div className="mt-2 mr-2 md:mr-5">
+                    <p className="text-right">Desarrollado por Joao Basauri</p>
                 </div>
             </footer >
         </div >
