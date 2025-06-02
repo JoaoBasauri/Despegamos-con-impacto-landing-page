@@ -10,87 +10,19 @@ export default function Landing() {
 
             {/* Hero Section */}
             <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-10 text-gray-900">
-                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5   md:mb-10 gap-1 md:gap-8">
-                    <h1 className="font-bold text-2xl md:text-4xl">Postulaciones</h1>
-                    <a
-                        href="/despegamos-con-impacto/pdf/Bases del concurso - Despegamos con Impacto.pdf"
-                        target="_blank"
-                        className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
-                    >
-                        <FaArrowAltCircleDown className="text-lg md:text-2xl" />
-                        <span className="text-sm md:text-base">Descarga las bases</span>
-                    </a>
-                </div>
-
-                <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:py-0">
-                    <Image
-                        src="/despegamos-con-impacto/logo.png"
-                        width={500}
-                        height={500}
-                        alt="Despegamos con impacto"
-                        className="-mb-10 md:mb-0"
-                    />
-                    <div className="flex-row items-center justify-center text-justify">
-                        <p className="text-m md:text-m max-w-2xl mx-auto mb-8">
-                            En un país lleno de organizaciones que transforman vidas todos los días, LATAM Airlines
-                            Perú y Fundación OLI se unen para lanzar una iniciativa que reconoce, impulsa y fortalece
-                            ese trabajo silencioso pero poderoso que cambia realidades desde lo local.
-                        </p>
-                        <p className="text-m md:text-m max-w-2xl mx-auto mb-8">
-                            Porque creemos en el valor de construir desde el territorio, de sumar desde lo colectivo, y
-                            de elevar a quienes hacen que el impacto social vuele alto, nace Despegamos con Impacto,
-                            una convocatoria nacional para organizaciones sociales con operaciones en el Perú.
-                        </p>
-                        <p className="text-m md:text-m max-w-2xl mx-auto mb-8">
-                            Sabemos que liderar una organización social no es sencillo: demanda coraje, pasión y
-                            también estructura. Por eso, Despegamos con Impacto  busca acompañarte a ti y a tu
-                            equipo con las herramientas, el conocimiento y el impulso necesario para que tu impacto no
-                            solo crezca, sino que sea sostenible y transformador a largo plazo.
-                        </p>
-                    </div>
-                </div>
-                <div className="md:flex grid grid-cols-2 justify-center items-center gap-5 md:mb-5 m-5">
-                    <a href="#proposito" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition-aññ">
-                        Propósito
-                    </a>
-                    <a href="#categoria" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Categorias
-                    </a>
-                    <a href="#premio" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Premios
-                    </a>
-                    <a href="#participante" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Participantes
-                    </a>
-                    <a href="#postulacion" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Postulación
-                    </a>
-                    <a href="#mentor" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Mentor
-                    </a>
-                    <a href="#cronograma" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Cronograma
-                    </a>
-                    <a href="#faq" className="inline-block bg-[#FFB001] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        FAQ
-                    </a>
-                </div>
-                <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
-                    <div className="flex flex-col md:flex-row items-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl">
-                        <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
+                <div className="flex flex-col md:flex-row md:justify-around items-center -mb-5   md:mb-10 gap-5 md:gap-1">
+                    <div className="flex flex-col order-2 md:flex-row md:justify-center items-center gap-1 md:gap-8">
+                        <h1 className="font-bold text-2xl md:text-4xl">Concurso</h1>
+                        <a
+                            href="/despegamos-con-impacto/pdf/Bases del concurso - Despegamos con Impacto.pdf"
                             target="_blank"
-                            className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
-                            <FaPen size={13} />
-                            Inscribete Aquí
-                        </a>
-                        <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
-                            target="_blank"
-                            className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
-                            <FaFile size={13} />
-                            Guia de preguntas
+                            className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                        >
+                            <FaArrowAltCircleDown className="text-lg md:text-2xl" />
+                            <span className="text-sm md:text-base">Descarga las bases</span>
                         </a>
                     </div>
-                    <div className="flex flex-col md:flex-row items-ce  nter gap-2">
+                    <div className="flex flex-row order-1 md:order-2 items-center ml-8 md:mx-0 md:gap-2">
                         <Image
                             src="/despegamos-con-impacto/Latam-logo.svg"
                             width={200}
@@ -105,6 +37,63 @@ export default function Landing() {
                             alt="Despegamos con impacto"
                             className="mb-6 md:mb-0"
                         />
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:py-0">
+                    <Image
+                        src="/despegamos-con-impacto/logo.png"
+                        width={500}
+                        height={500}
+                        alt="Despegamos con impacto"
+                        className="-mb-10 md:mb-0"
+                    />
+                    <div className="flex-row items-center justify-center text-justify">
+                        <p className="text-m md:text-m max-w-2xl mx-auto mb-8">
+                            LATAM Airlines Perú y Fundación OLI lanzan Despegamos con Impacto, una convocatoria
+                            nacional que reconoce y fortalece el trabajo de organizaciones sociales en el Perú.
+                            Buscamos impulsar su crecimiento sostenible con herramientas, conocimiento y
+                            acompañamiento para que su impacto llegue más lejos.
+                        </p>
+                    </div>
+                </div>
+                <div className="md:flex grid grid-cols-2 justify-around md:justify-center items-center text-center gap-5 md:mb-5 m-5">
+                    <a href="#categoria" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Categorias
+                    </a>
+                    <a href="#premio" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Premios
+                    </a>
+                    <a href="#participante" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Participantes
+                    </a>
+                    <a href="#postulacion" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Postulación
+                    </a>
+                    <a href="#mentor" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Mentor
+                    </a>
+                    <a href="#cronograma" className="inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Cronograma
+                    </a>
+                    <a href="#faq" className="col-span-2 md:col-span-1 mx-25 md:mx-0 inline-block bg-[#322A7E] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        FAQ
+                    </a>
+                </div>
+                <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
+                    <div className="flex flex-col md:flex-row items-center gap-2 md:rounded-full rounded-4xl">
+                        <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
+                            target="_blank"
+                            className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            <FaPen size={13} />
+                            Inscribete Aquí
+                        </a>
+                        <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
+                            target="_blank"
+                            className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            <FaFile size={13} />
+                            Guia de preguntas
+                        </a>
                     </div>
                 </div>
             </section>
