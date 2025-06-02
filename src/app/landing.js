@@ -296,7 +296,7 @@ export default function Landing() {
                         </div>
                     </div>
                 </div>
-                <div className="mx-auto flex flex-col md:flex-row items-center justify-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl object-center max-w-150">
+                <div className="mt-5 md:-mt-5 mx-auto flex flex-col md:flex-row items-center justify-center gap-2 bg-[#FFB001] md:rounded-full rounded-4xl object-center max-w-150">
                     <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
                         target="_blank"
                         className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#ffaf0100] text-[#233E8B] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
@@ -389,8 +389,8 @@ export default function Landing() {
             <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#1B0088] text-justify">
                 <h2 className="text-3xl font-bold mb-6 text-[#FF3E78] ml-0 md:ml-110 text-left">Etapas del concurso</h2>
                 <div className="overflow-x-auto p-4">
-                    <div className="rounded-xl overflow-hidden border-2 border-black">
-                        <table className="min-w-full text-sm md:text-base bg-[#F4F2F9]">
+                    <div className="inline-block min-w-full align-middle rounded-xl border-2 border-white overflow-hidden">
+                        <table className="min-w-full text-sm md:text-base bg-[#F4F2F9] text-left">
                             <thead className="bg-[#FF3E78] text-white">
                                 <tr>
                                     <th className="py-3 px-4 text-left">Actividad</th>
@@ -468,12 +468,12 @@ export default function Landing() {
             {/*FAQ section */}
             <section id="faq" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
                 <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">FAQ</h2>
-                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5   md:mb-10 gap-1 md:gap-8">
+                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 md:mb-10 gap-1 md:gap-8 text-left">
                     <h1 className="font-bold text-2xl md:text-2xl">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
                     <a
                         href="/despegamos-con-impacto/pdf/faq.pdf"
                         target="_blank"
-                        className="flex items-center gap-1 mt-5 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                        className="flex items-center gap-1 mt-5 md:mt-0 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
                     >
                         <FaArrowAltCircleDown className="text-lg md:text-2xl" />
                         <span className="text-sm md:text-base">FAQ</span>
@@ -488,8 +488,8 @@ export default function Landing() {
             > <FaChevronUp></FaChevronUp> </a>
 
             {/* Footer */}
-            < footer className="bg-[#F4F2F9] md:flex justify-between items-center text-sm text-gray-600" >
-                <div className=" ml-2 md:ml-5 font-extrabold text-xl">
+            < footer className="bg-[#F4F2F9] flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-600" >
+                <div className="md:ml-5 font-extrabold text-xl">
                     <h2 className="ml-5 mb-2">REDES SOCIALES</h2>
                     <div className="flex flex-row gap-5 mb-5 ml-5">
                         <a
@@ -507,10 +507,10 @@ export default function Landing() {
                     </div>
                 </div>
                 <div>
-                    <p className="md:text-normal text-right">© Todos los derechos reservados 2025. Fundación Oli</p>
+                    <p className="md:text-normal">© Todos los derechos reservados 2025. Fundación Oli</p>
                 </div>
                 <div className="mt-2 mr-2 md:mr-5">
-                    <p className="text-right">Desarrollado por Joao Basauri</p>
+                    <p className="">Desarrollado por Joao Basauri</p>
                 </div>
             </footer >
         </div >
