@@ -59,7 +59,7 @@ export default function Landing() {
                         alt="Despegamos con impacto"
                         className="-mb-10 md:mb-0"
                     />
-                    <div className="flex-row items-center justify-center text-justify">
+                    <div className="flex-row items-center justify-center text-left">
                         <p className="text-m md:text-m max-w-2xl mx-auto">
                             LATAM Airlines Perú y Fundación OLI lanzan Despegamos con Impacto, una convocatoria
                             nacional que reconoce y fortalece el trabajo de organizaciones sociales en el Perú.
@@ -112,9 +112,9 @@ export default function Landing() {
             </section>
 
             {/* Proposito Section */}
-            <section id="proposito" className="py-16 px-6 md:px-20 bg-[#290087] text-justify">
+            <section id="proposito" className="py-16 px-6 md:px-20 bg-[#290087] text-left">
                 <div className="flex flex-col justify-center items-center mb-5">
-                    <h2 className="text-5xl justify-start min-w-6xl font-bold mb-6 text-[#ff3e78]">Nuestro Propósito</h2>
+                    <h2 className="text-5xl justify-start md:min-w-6xl font-bold mb-6 text-[#ff3e78]">Nuestro Propósito</h2>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-5">
                     <p className="text-xl text-white leading-relaxed max-w-6xl">
@@ -206,7 +206,7 @@ export default function Landing() {
             </section >
 
             {/* Premio Section */}
-            < section id="premio" className="py-16 px-6 md:px-20 bg-[#290087] text-justify" >
+            < section id="premio" className="py-16 px-6 md:px-20 bg-[#290087] text-left" >
                 <h2 className="text-5xl font-semibold mb-6 text-[#ff3e78]">¡Serán 10 los finalistas y 2 ganadores!</h2>
                 <p className="text-2xl text-white max-w-full mb-8  ">
                     Cinco organizaciones por categoría serán seleccionadas para acceder a un proceso
@@ -261,9 +261,9 @@ export default function Landing() {
             </section >
 
             {/* Postulacion Section*/}
-            <section id="postulacion" className="py-16 px-6 md:-mt-16 md:px-20 bg-[#290087] text-justify">
-                <h2 className="text-5xl font-bold mb-8 text-[#ff3e78] text-left md:text-justify">Conoce nuestro proceso de postulación</h2>
-                <div className="md:grid grid-cols-2 grid-rows-3 text-white gap-2 gap-x-15 mx-5">
+            <section id="postulacion" className="py-16 px-6 md:-mt-16 md:px-20 bg-[#290087] text-left">
+                <h2 className="text-5xl font-bold mb-8 text-[#ff3e78] text-left md:text-left">Conoce nuestro proceso de postulación</h2>
+                <div className="md:grid grid-cols-2 grid-rows-[200_200_200] text-white gap-5 gap-x-15 mx-5">
                     <div>
                         <h3 className="font-bold text-2xl mt-5 bg-[#35A1F4] rounded-2xl px-8 -mx-8">Paso 1</h3>
                         <p className="text-xl">Reflexiona junto a tu equipo sobre los principales desafíos institucionales que enfrentan
@@ -287,16 +287,16 @@ export default function Landing() {
                                 OLI, sin necesidad de realizar el proceso de postulación adicional.</p>
                         </div>
                     </div>
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:rounded-full rounded-4xl">
+                    <div className="flex flex-col 2xl:flex-row justify-center items-center gap-2 mt-5">
                         <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
                             target="_blank"
-                            className="flex justify-center items-center gap-2 min-w-80 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            className="flex justify-center items-center gap-2 lg:min-w-80 min-w-60 md:my-2 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaPen size={13} />
                             Postula Aquí
                         </a>
                         <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
                             target="_blank"
-                            className="flex justify-center items-center gap-2 min-w-80 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            className="flex justify-center items-center gap-2 lg:min-w-80 min-w-60 md:my-2 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
                             Guía de preguntas
                         </a>
@@ -316,9 +316,9 @@ export default function Landing() {
             </section>
 
             {/*Mentor Section*/}
-            <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
+            <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-left">
                 <div className="flex flex-col justify-center items-center mb-5">
-                    <h2 className="text-5xl min-w-5xl font-bold mb-6 text-[#290087] text-left">¿Deseas ser Mentor?</h2>
+                    <h2 className="text-5xl md:min-w-5xl font-bold mb-6 text-[#290087] text-left">¿Deseas ser Mentor?</h2>
                 </div>
                 <div className="flex flex-col justify-center items-center mb-5">
                     <p className="justify-center text-xl text-gray-900 max-w-5xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
@@ -373,9 +373,9 @@ export default function Landing() {
             </section>
 
             {/*Cronograma section */}
-            <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#290087] text-justify">
+            <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#290087] text-left">
                 <div className="flex flex-col justify-center items-center mb-5">
-                    <h2 className="text-5xl justify-start min-w-5xl font-bold text-[#ff3e78]">Etapas del concurso</h2>
+                    <h2 className="text-5xl justify-start md:min-w-5xl font-bold text-[#ff3e78]">Etapas del concurso</h2>
                 </div>
                 <div className="flex overflow-x-auto p-4">
                     <div className="inline-block min-w-5xl align-middle rounded-xl border-2 border-white overflow-hidden mx-auto">
@@ -454,7 +454,7 @@ export default function Landing() {
             </section>
 
             {/*FAQ section */}
-            <section id="faq" className="py-8 px-6 md:px-20 bg-[#F4F2F9] text-justify">
+            <section id="faq" className="py-8 px-6 md:px-20 bg-[#F4F2F9] text-left">
                 <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 gap-5 md:gap-8 text-left">
                     <h1 className="text-3xl font-bold text-[#290087] ml-0  text-left">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
                     <a
