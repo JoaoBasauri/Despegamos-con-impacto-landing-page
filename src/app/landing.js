@@ -7,10 +7,10 @@ import { FaXTwitter, FaYoutube } from "react-icons/fa6"
 
 export default function Landing() {
     return (
-        <div className="font-[Open_sans] text-gray-900 bg-[#F4F2F9]">
+        <div className="font-[Open_sans] text-gray-900 bg-[#F4F2F9] min-w-full">
 
             {/* Hero Section */}
-            <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-10 text-gray-900">
+            <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-10 text-gray-900 overflow-hidden">
                 <div className="flex flex-col md:flex-row md:justify-around items-center -mb-5   md:mb-10 gap-5 md:gap-1">
                     <div className="flex flex-col order-2 md:flex-row md:justify-center items-center gap-1 md:gap-8">
                         <h1 className="font-bold text-2xl md:text-4xl">Concurso</h1>
@@ -23,7 +23,7 @@ export default function Landing() {
                             <span className="text-sm md:text-base">Descarga las bases</span>
                         </a>
                     </div>
-                    <div className="flex flex-row order-1 md:order-2 items-center ml-8 md:mx-0 md:gap-2">
+                    <div className="flex flex-row justify-center flex-wrap order-1 md:order-2 items-center md:gap-2">
                         <Image
                             src="/despegamos-con-impacto/Latam-logo.svg"
                             width={200}
@@ -87,13 +87,13 @@ export default function Landing() {
                     <div className="flex flex-col md:flex-row items-center gap-2 md:rounded-full rounded-4xl">
                         <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
                             target="_blank"
-                            className="flex items-center gap-2 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            className="flex items-center justify-center min-w-60 gap-2 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaPen size={13} />
                             Postula Aquí
                         </a>
                         <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
                             target="_blank"
-                            className="flex items-center gap-2 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
+                            className="flex items-center justify-center min-w-60 gap-2 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
                             Guia de preguntas
                         </a>
@@ -459,7 +459,7 @@ export default function Landing() {
 
             {/* Footer */}
             < footer className="bg-[#F4F2F9] flex flex-col mt-5 md:justify-between items-center text-sm text-gray-600" >
-                <div className="flex flex-row  items-center ml-8 md:mx-0 md:gap-2">
+                <div className="flex flex-row flex-wrap justify-center items-center md:gap-2">
                     <Image
                         src="/despegamos-con-impacto/Latam-logo.svg"
                         width={200}
