@@ -3,6 +3,7 @@ import Participantes from './participantes'
 import { FaArrowAltCircleDown, FaPen, FaFile } from "react-icons/fa"
 import { FaChevronUp } from "react-icons/fa"
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+import { FaXTwitter, FaYoutube } from "react-icons/fa6"
 
 export default function Landing() {
     return (
@@ -146,11 +147,11 @@ export default function Landing() {
 
             {/* Categoria Section */}
             < section id="categoria" className="py-16 px-6 md:px-20 bg-[#F4F2F9]" >
-                <h2 className="text-5xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">Conoce nuestras Categorias</h2>
+                <h2 className="text-5xl font-bold mb-6 text-[#290087] ml-0 md:ml-110 text-left">Conoce nuestras Categorias</h2>
 
                 <div className="grid md:grid-cols-[500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
-                    <h3 className="text-2xl font-semibold mb-6 text-[#1B0088] ">Categoria 1: Despegue inicial</h3>
-                    <h3 className="text-2xl font-semibold mb-6 text-[#1B0088] row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoria 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
                     <Image
                         src={"/despegamos-con-impacto/despegue.svg"}
                         width={400}
@@ -304,7 +305,7 @@ export default function Landing() {
 
             {/*Mentor Section*/}
             <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
-                <h2 className="text-5xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">¿Deseas ser Mentor?</h2>
+                <h2 className="text-5xl font-bold mb-6 text-[#290087] ml-0 md:ml-110 text-left">¿Deseas ser Mentor?</h2>
                 <div className="flex flex-col justify-center items-center mb-5">
                     <p className="justify-center text-lg text-gray-900 max-w-5xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
                         organización finalista en la identificación, diseño y puesta en marcha de un proyecto de
@@ -331,23 +332,23 @@ export default function Landing() {
                     <div className="row-start-1 text-[#FF3E78] font-semibold text-4xl  mb-10 md:mr-10">
                         <h3 className="text-center">Beneficios</h3>
                     </div>
-                    <div className="row-start-2 flex flex-col gap-3 md:mr-10 text-gray-900 text-xl">    
+                    <div className="row-start-2 flex flex-col gap-3 md:mr-10 text-gray-900 text-xl">
                         <li> Acompañamiento directo al fortalecimiento de
-                        una organización social.s</li>
+                            una organización social.s</li>
                         <li> Diseño de soluciones estratégicas para el
-                        desarrollo del tercer sector.</li>
+                            desarrollo del tercer sector.</li>
                         <li>Acceso a la Comunidad OLI y conexión con
-                        líderes, mentores y aliados</li>
+                            líderes, mentores y aliados</li>
                         <li> Certificado oficial y reconocimiento público del
-                        programa.</li>
+                            programa.</li>
                         <li>Visibilización profesional en canales de
-                        Fundación OLI y LATAM.</li>
+                            Fundación OLI y LATAM.</li>
                         <li> Participación en una iniciativa respaldada por
-                        marcas con compromiso social.</li>
+                            marcas con compromiso social.</li>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 my-10 md:mb-10 gap-1 md:gap-8">
-                    <h1 className="font-bold  text-1xl md:text-4xl"> Postula a nuestro grupo de mentores:</h1>
+                    <h1 className="font-bold text-[#290087] text-1xl md:text-4xl"> Postula a nuestro grupo de mentores:</h1>
                     <a href="https://forms.gle/kmoM871LEHV1pmBq9"
                         target="_blank"
                         className="flex items-center text-2xl gap-2 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
@@ -358,7 +359,7 @@ export default function Landing() {
             </section>
 
             {/*Cronograma section */}
-            <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#1B0088] text-justify">
+            <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#290087] text-justify">
                 <h2 className="text-5xl font-bold mb-6 text-[#FF3E78] ml-0 md:ml-110 text-left">Etapas del concurso</h2>
                 <div className="flex overflow-x-auto p-4">
                     <div className="inline-block min-w-5xl align-middle rounded-xl border-2 border-white overflow-hidden mx-auto">
@@ -367,7 +368,7 @@ export default function Landing() {
                                 <tr>
                                     <th className="py-3 px-4 text-left">Actividad</th>
                                     <th className="py-3 px-4 text-left">Fecha inicio</th>
-                                    <th className="py-3 px-4 text-left">Fecha término</th>  
+                                    <th className="py-3 px-4 text-left">Fecha término</th>
                                 </tr>
                             </thead>
                             <tbody className="text-[#1B0088]">
@@ -437,10 +438,9 @@ export default function Landing() {
             </section>
 
             {/*FAQ section */}
-            <section id="faq" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
-                <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">FAQ</h2>
-                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 md:mb-10 gap-1 md:gap-8 text-left">
-                    <h1 className="font-bold text-2xl md:text-2xl">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
+            <section id="faq" className="py-8 px-6 md:px-20 bg-[#F4F2F9] text-justify">
+                <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 gap-5 md:gap-8 text-left">
+                    <h1 className="text-3xl font-bold text-[#290087] ml-0  text-left">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
                     <a
                         href="/despegamos-con-impacto/pdf/faq.pdf"
                         target="_blank"
@@ -458,29 +458,86 @@ export default function Landing() {
             > <FaChevronUp></FaChevronUp> </a>
 
             {/* Footer */}
-            < footer className="bg-[#F4F2F9] flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-600" >
-                <div className="md:ml-5 font-extrabold text-xl">
-                    <h2 className="ml-5 mb-2">REDES SOCIALES</h2>
-                    <div className="flex flex-row gap-5 mb-5 ml-5">
-                        <a
-                            href="https://www.facebook.com/FundacionOLI"
-                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                        > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
-                        <a
-                            href="https://www.instagram.com/fundacionoli/"
-                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                        > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
-                        <a
-                            href="https://www.linkedin.com/company/fundación-oli/"
-                            className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                        > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+            < footer className="bg-[#F4F2F9] flex flex-col mt-5 md:justify-between items-center text-sm text-gray-600" >
+                <div className="flex flex-row  items-center ml-8 md:mx-0 md:gap-2">
+                    <Image
+                        src="/despegamos-con-impacto/Latam-logo.svg"
+                        width={200}
+                        height={200}
+                        alt="Despegamos con impacto"
+                        className="mb-6 md:mb-0"
+                    />
+                    <Image
+                        src="/despegamos-con-impacto/LOGO_Oli.png"
+                        width={200}
+                        height={200}
+                        alt="Despegamos con impacto"
+                        className="mb-6 md:mb-0"
+                    />
+                </div>
+                <div className="flex flex-col justify-center font-extrabold text-xl">
+                    <h2 className="mx-auto mb-2 text-3xl">REDES SOCIALES</h2>
+                    <div className="flex flex-col md:flex-row gap-5 md:gap-50 justify-stretch">
+                        <div className="flex flex-col justify-center items-center gap-5 min-w-80">
+                            <h3 className="text-2xl font-semibold text-black"> Fundacion OLI</h3>
+                            <div className="flex flex-row gap-5 mb-5">
+                                <a
+                                    href="https://www.facebook.com/FundacionOLI"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://www.instagram.com/fundacionoli/"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://www.linkedin.com/company/fundación-oli/"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+                            </div>
+                        </div>
+                        <div className="flex flex-col justify-center items-center gap-5 min-w-80">
+                            <h3 className="text-2xl font-semibold text-black"> LATAM Airlines</h3>
+                            <div className="flex flex-row gap-5 mb-5">
+                                <a
+                                    href="https://www.facebook.com/LATAMPeru/"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://x.com/LATAM_PER"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaXTwitter size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://www.youtube.com/user/lanairlines"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaYoutube size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://www.instagram.com/latamairlines/"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
+                                <a
+                                    href="https://www.linkedin.com/company/latam_airlines/"
+                                    target="_blank"
+                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <p className="md:text-normal">© Todos los derechos reservados 2025. Fundación Oli</p>
-                </div>
-                <div className="mt-2 mr-2 md:mr-5">
-                    <p className="">Desarrollado por Joao Basauri</p>
+                <div className="flex flex-col md:flex-row justify-around items-center gap-2 md:gap-10 min-w-full">
+                    <div>
+                        <p className="md:text-normal">© Todos los derechos reservados 2025. Fundación Oli</p>
+                        <p className="md:text-normal">© 2025 LATAM Airlines Perú S.A. RUC: 20341841357</p>
+                    </div>
+                    <div>
+                        <p className="">Desarrollado por Joao Basauri</p>
+                    </div>
                 </div>
             </footer >
         </div >
