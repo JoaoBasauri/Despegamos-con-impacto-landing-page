@@ -219,22 +219,22 @@ export default function Landing() {
                     </div>
                 </div>
 
-                <p className="text-lg text-white max-w-200 mb-8">
+                <p className="text-xl text-white max-w-200 mb-8">
                     Además, cada finalista tendrá la oportunidad de presentar su proyecto de fortalecimiento
                     frente a nuestro Comité de Expertos y ser acreedor del premio de su categoría.
                 </p>
 
                 <div className="grid md:grid-cols-[600_600] md:grid-rows-[50_300]  justify-items-center justify-center items-center">
-                    <h3 className="text-xl font-semibold my-6 text-white ">Categoria 1: Despegue inicial</h3>
-                    <h3 className="text-xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
-                    <div className="text-lg text-white max-w-110 mb-2">
+                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoria 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
+                    <div className="text-xl text-white max-w-110 mb-2">
                         <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 15,000</a> para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</p>
                         <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
                             2026) en temas de finanzas e impacto.</p>
                         <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
                     </div>
-                    <div className="text-lg text-white max-w-110 mb-2 row-start-5 md:row-auto">
+                    <div className="text-xl text-white max-w-110 mb-2 row-start-5 md:row-auto">
                         <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</p>
                         <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
@@ -268,9 +268,9 @@ export default function Landing() {
                     </div>
                     <div className="row-start-3">
                         <h3 className="font-bold text-2xl mt-5 bg-[#3AB85C] rounded-2xl px-8 -mx-8">Paso 3</h3>
-                        <p className="text-lg">Una vez completado el formulario, recibirás un correo de confirmación en un plazo de 24 horas</p>
-                        <div>
-                            <h3 className="font-bold text-2xl mt-5">Nota: </h3>
+                        <p className="text-xl">Una vez completado el formulario, recibirás un correo de confirmación en un plazo de 24 horas</p>
+                        <div className="flex flex-col mx-auto md:ml-5">
+                            <h4 className="font-bold text-xl mt-5">Nota: </h4>
                             <p className="text-lg">Todas las organizaciones postulantes pasarán automáticamente a formar parte de la Red
                                 OLI, sin necesidad de realizar el proceso de postulación adicional.</p>
                         </div>
@@ -290,7 +290,7 @@ export default function Landing() {
                         </a>
                     </div>
                     <div className="flex flex-col mx-auto gap-2">
-                        <h3 className="font-bold text-2xl mt-5 md:-mt-5">Criterios de evaluación</h3>
+                        <h3 className="font-bold text-3xl mt-5 md:-mt-5">Criterios de evaluación</h3>
                         <div className="-indent-7 ml-5 md:ml-15 text-2xl text-left">
                             <li>Criterio 1: Capacidad de gestión y sostenibilidad </li>
                             <li>Criterio 2: Claridad de misión y objetivos de la ONG </li>
@@ -307,11 +307,11 @@ export default function Landing() {
             <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
                 <h2 className="text-5xl font-bold mb-6 text-[#290087] ml-0 md:ml-110 text-left">¿Deseas ser Mentor?</h2>
                 <div className="flex flex-col justify-center items-center mb-5">
-                    <p className="justify-center text-lg text-gray-900 max-w-5xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
+                    <p className="justify-center text-xl text-gray-900 max-w-5xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
                         organización finalista en la identificación, diseño y puesta en marcha de un proyecto de
                         fortalecimiento institucional, brindando guía técnica, perspectiva externa y soporte en la
                         toma de decisiones clave durante el proceso de acompañamiento.</p>
-                    <p className="justify-center text-lg text-gray-900 max-w-5xl mb-5">Nuestros mentores de impacto acompañarán a nuestros finalistas en la preparación del proyecto de
+                    <p className="justify-center text-xl text-gray-900 max-w-5xl mb-5">Nuestros mentores de impacto acompañarán a nuestros finalistas en la preparación del proyecto de
                         fortalecimiento institucional que presentarán en la Evaluación Final. Además, ayudarán a nuestros finalistas a
                         definir una hoja de ruta básica para la implementación de dicho proyecto e identificar sus desafíos internos y
                         posibles caminos de mejora.</p>
@@ -334,7 +334,7 @@ export default function Landing() {
                     </div>
                     <div className="row-start-2 flex flex-col gap-3 md:mr-10 text-gray-900 text-xl">
                         <li> Acompañamiento directo al fortalecimiento de
-                            una organización social.s</li>
+                            una organización sociales.</li>
                         <li> Diseño de soluciones estratégicas para el
                             desarrollo del tercer sector.</li>
                         <li>Acceso a la Comunidad OLI y conexión con
