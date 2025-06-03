@@ -24,20 +24,30 @@ export default function Landing() {
                         </a>
                     </div>
                     <div className="flex flex-row justify-center flex-wrap order-1 md:order-2 items-center md:gap-2">
-                        <Image
-                            src="/despegamos-con-impacto/Latam-logo.svg"
-                            width={200}
-                            height={200}
-                            alt="Despegamos con impacto"
-                            className="mb-6 md:mb-0"
-                        />
-                        <Image
-                            src="/despegamos-con-impacto/LOGO_Oli.png"
-                            width={200}
-                            height={200}
-                            alt="Despegamos con impacto"
-                            className="mb-6 md:mb-0"
-                        />
+                        <a
+                            href="https://www.latamairlines.com/pe/es"
+                            target="_blank"
+                        >
+                            <Image
+                                src="/despegamos-con-impacto/Latam-logo.svg"
+                                width={200}
+                                height={200}
+                                alt="Despegamos con impacto"
+                                className="mb-6 md:mb-0"
+                            />
+                        </a>
+                        <a
+                            href="https://olifoundation.org/"
+                            target="_blank"
+                        >
+                            <Image
+                                src="/despegamos-con-impacto/LOGO_Oli.png"
+                                width={200}
+                                height={200}
+                                alt="Despegamos con impacto"
+                                className="mb-6 md:mb-0"
+                            />
+                        </a>
                     </div>
                 </div>
 
@@ -60,7 +70,7 @@ export default function Landing() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-200">
                     <a href="#categoria" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        Categorias
+                        Categorías
                     </a>
                     <a href="#participante" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Participantes
@@ -95,7 +105,7 @@ export default function Landing() {
                             target="_blank"
                             className="flex items-center justify-center min-w-60 gap-2 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
-                            Guia de preguntas
+                            Guía de preguntas
                         </a>
                     </div>
                 </div>
@@ -103,15 +113,17 @@ export default function Landing() {
 
             {/* Proposito Section */}
             <section id="proposito" className="py-16 px-6 md:px-20 bg-[#290087] text-justify">
-                <h2 className="text-5xl font-bold mb-6 text-[#ff3e78] ml-0 md:ml-110">Nuestro Propósito</h2>
+                <div className="flex flex-col justify-center items-center mb-5">
+                    <h2 className="text-5xl justify-start min-w-6xl font-bold mb-6 text-[#ff3e78]">Nuestro Propósito</h2>
+                </div>
                 <div className="flex flex-col items-center justify-center gap-5">
-                    <p className="text-xl text-white leading-relaxed max-w-3xl">
+                    <p className="text-xl text-white leading-relaxed max-w-6xl">
                         Sabemos que liderar una organización social no es sencillo: demanda coraje, pasión y también
                         estructura. Por eso, Despegamos con Impacto  busca acompañarte a ti y a tu equipo con las
                         herramientas, el conocimiento y el impulso necesario para que tu impacto no solo crezca, sino que sea
                         sostenible y transformador a largo plazo.
                     </p>
-                    <p className="text-xl text-white leading-relaxed max-w-3xl">
+                    <p className="text-xl text-white leading-relaxed max-w-6xl">
                         Despegamos con Impacto nace para fortalecer ONGs peruanas para que puedan despegar su impacto
                         social, a través del fortalecimiento institucional, brindándoles herramientas clave para:
                     </p>
@@ -146,12 +158,12 @@ export default function Landing() {
             </section >
 
             {/* Categoria Section */}
-            < section id="categoria" className="py-16 px-6 md:px-20 bg-[#F4F2F9]" >
-                <h2 className="text-5xl font-bold mb-6 text-[#290087] ml-0 md:ml-110 text-left">Conoce nuestras Categorias</h2>
+            < section id="categoria" className="flex flex-col justify-center py-16 px-6 md:px-20 bg-[#F4F2F9]" >
+                <h2 className="text-5xl font-bold mb-6 text-[#290087] text-center">Conoce nuestras Categorías</h2>
 
                 <div className="grid md:grid-cols-[500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
-                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoria 1: Despegue inicial</h3>
-                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoría 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
                     <Image
                         src={"/despegamos-con-impacto/despegue.svg"}
                         width={400}
@@ -196,51 +208,51 @@ export default function Landing() {
             {/* Premio Section */}
             < section id="premio" className="py-16 px-6 md:px-20 bg-[#290087] text-justify" >
                 <h2 className="text-5xl font-semibold mb-6 text-[#ff3e78]">¡Serán 10 los finalistas y 2 ganadores!</h2>
-                <p className="text-2xl text-white max-w-200 mb-8  ">
+                <p className="text-2xl text-white max-w-full mb-8  ">
                     Cinco organizaciones por categoría serán seleccionadas para acceder a un proceso
                     exclusivo de fortalecimiento que incluye:
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8 text-left my-12 text-xl">
                     <div className="flex flex-col bg-[#35A1F4] text-white p-4 rounded shadow justify-items-center">
-                        <p className="font-semibold mt-auto">Capacitacion especializada</p>
+                        <p className="font-semibold mt-auto">Capacitación especializada</p>
                         <li className="mt-2 ">Transparencia financiera y contable.</li >
                         <li className="mt-2 ">Evaluación de impacto de proyectos sociales.</li >
                         <li className="mt-2 mb-auto">Comunicación efectiva para la movilización de recursos </li >
                     </div>
                     <div className="flex flex-col bg-[#FFFFFF] text-[#290087] p-4 rounded shadow justify-items-center">
-                        <p className="font-semibold mt-auto">Mentoria personalizada</p>
+                        <p className="font-semibold mt-auto">Mentoría personalizada</p>
                         <p className="mt-2 mb-auto">Durante dos meses con profesionales expertos</p>
                     </div>
                     <div className="flex flex-col bg-[#3AB85C] text-white p-4 rounded shadow justify-items-center">
-                        <p className="font-semibold mt-auto">Visibilizacíon de su trabajo e impacto</p>
+                        <p className="font-semibold mt-auto">Visibilización de su trabajo e impacto</p>
                         <p className="mt-2 mb-auto">A través de los canales de comunicación de
                             Fundación OLI y LATAM Airlines. </p>
                     </div>
                 </div>
 
-                <p className="text-xl text-white max-w-200 mb-8">
+                <p className="text-2xl text-white max-w-full mb-8">
                     Además, cada finalista tendrá la oportunidad de presentar su proyecto de fortalecimiento
                     frente a nuestro Comité de Expertos y ser acreedor del premio de su categoría.
                 </p>
 
-                <div className="grid md:grid-cols-[600_600] md:grid-rows-[50_300]  justify-items-center justify-center items-center">
-                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoria 1: Despegue inicial</h3>
-                    <h3 className="text-2xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoria 2: Vuelo en curso</h3>
-                    <div className="text-xl text-white max-w-110 mb-2">
-                        <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 15,000</a> para el fortalecimiento institucional o ejecución de un
-                            proyecto de mejora organizacional.</p>
-                        <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
-                            2026) en temas de finanzas e impacto.</p>
-                        <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
-                    </div>
-                    <div className="text-xl text-white max-w-110 mb-2 row-start-5 md:row-auto">
-                        <p className="-indent-4"><a className="font-semibold"> - Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
-                            proyecto de mejora organizacional.</p>
-                        <p className="-indent-4"><a className="font-semibold"> - Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
-                            2026) en temas de finanzas e impacto.</p>
-                        <p className="-indent-4"><a className="font-semibold"> - Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></p>
-                    </div>
+                <div className="grid md:grid-cols-2 md:grid-rows-[50_300]  justify-items-center justify-center items-center">
+                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoría 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
+                    <ul className="text-xl text-white max-w-150 mb-2 list-disc">
+                        <li><a className="font-semibold">Capital semilla de S/ 15,000</a> para el fortalecimiento institucional o ejecución de un
+                            proyecto de mejora organizacional.</li>
+                        <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
+                            2026) en temas de finanzas e impacto.</li>
+                        <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
+                    </ul>
+                    <ul className="text-xl text-white max-w-150 mb-2 row-start-5 md:row-auto list-disc">
+                        <li><a className="font-semibold">Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
+                            proyecto de mejora organizacional.</li>
+                        <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
+                            2026) en temas de finanzas e impacto.</li>
+                        <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
+                    </ul>
                 </div>
             </section >
             {/* Participantes Section*/}
@@ -250,7 +262,7 @@ export default function Landing() {
 
             {/* Postulacion Section*/}
             <section id="postulacion" className="py-16 px-6 md:-mt-16 md:px-20 bg-[#290087] text-justify">
-                <h2 className="text-5xl font-bold mb-6 text-[#ff3e78]">Conoce nuestro proceso de postulación</h2>
+                <h2 className="text-5xl font-bold mb-8 text-[#ff3e78] text-left md:text-justify">Conoce nuestro proceso de postulación</h2>
                 <div className="md:grid grid-cols-2 grid-rows-3 text-white gap-2 gap-x-15 mx-5">
                     <div>
                         <h3 className="font-bold text-2xl mt-5 bg-[#35A1F4] rounded-2xl px-8 -mx-8">Paso 1</h3>
@@ -286,7 +298,7 @@ export default function Landing() {
                             target="_blank"
                             className="flex justify-center items-center gap-2 min-w-80 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
-                            Guia de preguntas
+                            Guía de preguntas
                         </a>
                     </div>
                     <div className="flex flex-col mx-auto gap-2">
@@ -305,7 +317,9 @@ export default function Landing() {
 
             {/*Mentor Section*/}
             <section id="mentor" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-justify">
-                <h2 className="text-5xl font-bold mb-6 text-[#290087] ml-0 md:ml-110 text-left">¿Deseas ser Mentor?</h2>
+                <div className="flex flex-col justify-center items-center mb-5">
+                    <h2 className="text-5xl min-w-5xl font-bold mb-6 text-[#290087] text-left">¿Deseas ser Mentor?</h2>
+                </div>
                 <div className="flex flex-col justify-center items-center mb-5">
                     <p className="justify-center text-xl text-gray-900 max-w-5xl mb-5">Los mentores son los responsables de acompañar de manera estratégica a una
                         organización finalista en la identificación, diseño y puesta en marcha de un proyecto de
@@ -360,7 +374,9 @@ export default function Landing() {
 
             {/*Cronograma section */}
             <section id="cronograma" className="py-16 px-6 md:px-20 bg-[#290087] text-justify">
-                <h2 className="text-5xl font-bold mb-6 text-[#FF3E78] ml-0 md:ml-110 text-left">Etapas del concurso</h2>
+                <div className="flex flex-col justify-center items-center mb-5">
+                    <h2 className="text-5xl justify-start min-w-5xl font-bold text-[#ff3e78]">Etapas del concurso</h2>
+                </div>
                 <div className="flex overflow-x-auto p-4">
                     <div className="inline-block min-w-5xl align-middle rounded-xl border-2 border-white overflow-hidden mx-auto">
                         <table className="min-w-full text-sm md:text-base bg-[#F4F2F9] text-left">
@@ -458,47 +474,33 @@ export default function Landing() {
             > <FaChevronUp></FaChevronUp> </a>
 
             {/* Footer */}
-            < footer className="bg-[#F4F2F9] flex flex-col mt-5 md:justify-between items-center text-sm text-gray-600" >
-                <div className="flex flex-row flex-wrap justify-center items-center md:gap-2">
-                    <Image
-                        src="/despegamos-con-impacto/Latam-logo.svg"
-                        width={200}
-                        height={200}
-                        alt="Despegamos con impacto"
-                        className="mb-6 md:mb-0"
-                    />
-                    <Image
-                        src="/despegamos-con-impacto/LOGO_Oli.png"
-                        width={200}
-                        height={200}
-                        alt="Despegamos con impacto"
-                        className="mb-6 md:mb-0"
-                    />
-                </div>
-                <div className="flex flex-col justify-center font-extrabold text-xl">
-                    <h2 className="mx-auto mb-2 text-3xl">REDES SOCIALES</h2>
-                    <div className="flex flex-col md:flex-row gap-5 md:gap-50 justify-stretch">
-                        <div className="flex flex-col justify-center items-center gap-5 min-w-80">
-                            <h3 className="text-2xl font-semibold text-black"> Fundacion OLI</h3>
-                            <div className="flex flex-row gap-5 mb-5">
-                                <a
-                                    href="https://www.facebook.com/FundacionOLI"
-                                    target="_blank"
-                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                                > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
-                                <a
-                                    href="https://www.instagram.com/fundacionoli/"
-                                    target="_blank"
-                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                                > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
-                                <a
-                                    href="https://www.linkedin.com/company/fundación-oli/"
-                                    target="_blank"
-                                    className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
-                                > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+            < footer className="bg-[#F4F2F9] flex flex-col mt-5 md:justify-between items-center text-sm text-gray-600 gap-5" >
+                <div className="flex flex-col md:flex-row justify-center font-extrabold text-xl gap-5 md:gap-110">
+                    <div className="flex flex-col justify-center">
+                        <h2 className="mx-auto mb-2 text-3xl text-center">REDES SOCIALES</h2>
+                        <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-stretch">
+                            <div className="flex flex-col justify-center items-center gap-2 min-w-80 ">
+                                <h3 className="text-2xl font-semibold text-black"> Fundacion OLI</h3>
+                                <div className="flex flex-row gap-5 mb-5">
+                                    <a
+                                        href="https://www.facebook.com/FundacionOLI"
+                                        target="_blank"
+                                        className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                    > <FaFacebookF size={24} style={{ color: "#F4F2F9" }} /></a>
+                                    <a
+                                        href="https://www.instagram.com/fundacionoli/"
+                                        target="_blank"
+                                        className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                    > <FaInstagram size={24} style={{ color: "#F4F2F9" }} /></a>
+                                    <a
+                                        href="https://www.linkedin.com/company/fundación-oli/"
+                                        target="_blank"
+                                        className="bg-[#818085] p-3 rounded-full shadow-lg hover:bg-[#1B0088] transition"
+                                    > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center gap-5 min-w-80">
+                        <div className="flex flex-col justify-center items-center gap-2 min-w-80">
                             <h3 className="text-2xl font-semibold text-black"> LATAM Airlines</h3>
                             <div className="flex flex-row gap-5 mb-5">
                                 <a
@@ -528,6 +530,32 @@ export default function Landing() {
                                 > <FaLinkedinIn size={24} style={{ color: "#F4F2F9" }} /></a>
                             </div>
                         </div>
+                    </div>
+                    <div className="flex flex-col flex-wrap justify-center items-center md:gap-2">
+                        <a
+                            href="https://olifoundation.org/"
+                            target="_blank"
+                        >
+                            <Image
+                                src="/despegamos-con-impacto/LOGO_Oli.png"
+                                width={200}
+                                height={200}
+                                alt="Despegamos con impacto"
+                                className="mb-6 md:mb-0"
+                            /></a>
+                        <a
+                            href="https://www.latamairlines.com/pe/es"
+                            target="_blank"
+
+                        >
+                            <Image
+                                src="/despegamos-con-impacto/Latam-logo.svg"
+                                width={200}
+                                height={200}
+                                alt="Despegamos con impacto"
+                                className="mb-6 md:mb-0"
+                            />
+                        </a>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row justify-around items-center gap-2 md:gap-10 min-w-full">
