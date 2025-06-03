@@ -9,7 +9,7 @@ export default function participantes() {
     const [isOpen2, setIsOpen2] = useState(false);
 
     return (
-        <div className="bg-[#F4F2F9] text-justify flex flex-col mb-5" >
+        <div className="bg-[#F4F2F9] text-left flex flex-col mb-5" >
             <h2 className="text-5xl font-bold mb-6 text-[#1B0088] mx-auto text-left">¿Quiénes pueden postular?</h2>
             <div className="flex items-center justify-center">
                 <p className="text-xl text-gray-900 max-w-5xl">
