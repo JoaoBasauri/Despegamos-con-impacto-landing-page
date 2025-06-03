@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/despegamos-con-impacto(/.*)?",
+      "destination": "/despegamos-con-impacto$1"
+    }
+  ]
+}
