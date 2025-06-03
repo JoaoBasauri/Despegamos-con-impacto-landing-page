@@ -477,8 +477,7 @@ export default function Landing() {
             < footer className="bg-[#F4F2F9] flex flex-col mt-5 md:justify-between items-center text-sm text-gray-600 gap-5" >
                 <div className="flex flex-col md:flex-row justify-center font-extrabold text-xl gap-5 md:gap-110">
                     <div className="flex flex-col justify-center">
-                        <h2 className="mx-auto mb-2 text-3xl text-center">REDES SOCIALES</h2>
-                        <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-stretch">
+                        <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-stretch order-2">
                             <div className="flex flex-col justify-center items-center gap-2 min-w-80 ">
                                 <h3 className="text-2xl font-semibold text-black"> Fundacion OLI</h3>
                                 <div className="flex flex-row gap-5 mb-5">
@@ -500,7 +499,7 @@ export default function Landing() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center gap-2 min-w-80">
+                        <div className="flex flex-col justify-center items-center gap-2 min-w-80 order-1">
                             <h3 className="text-2xl font-semibold text-black"> LATAM Airlines</h3>
                             <div className="flex flex-row gap-5 mb-5">
                                 <a
@@ -533,17 +532,6 @@ export default function Landing() {
                     </div>
                     <div className="flex flex-col flex-wrap justify-center items-center md:gap-2">
                         <a
-                            href="https://olifoundation.org/"
-                            target="_blank"
-                        >
-                            <Image
-                                src="/despegamos-con-impacto/LOGO_Oli.png"
-                                width={200}
-                                height={200}
-                                alt="Despegamos con impacto"
-                                className="mb-6 md:mb-0"
-                            /></a>
-                        <a
                             href="https://www.latamairlines.com/pe/es"
                             target="_blank"
 
@@ -556,6 +544,17 @@ export default function Landing() {
                                 className="mb-6 md:mb-0"
                             />
                         </a>
+                        <a
+                            href="https://olifoundation.org/"
+                            target="_blank"
+                        >
+                            <Image
+                                src="/despegamos-con-impacto/LOGO_Oli.png"
+                                width={200}
+                                height={200}
+                                alt="Despegamos con impacto"
+                                className="mb-6 md:mb-0"
+                            /></a>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row justify-around items-center gap-2 md:gap-10 min-w-full">
