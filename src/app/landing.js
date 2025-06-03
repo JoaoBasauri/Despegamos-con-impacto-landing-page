@@ -444,9 +444,8 @@ export default function Landing() {
                     <a
                         href="/despegamos-con-impacto/pdf/faq.pdf"
                         target="_blank"
-                        className="flex items-center gap-1 mt-5 md:mt-0 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
+                        className="flex justify-center items-center gap-2 min-w-80 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition "
                     >
-                        <FaArrowAltCircleDown className="text-lg md:text-2xl" />
                         <span className="text-sm md:text-base">FAQ</span>
                     </a>
                 </div>
