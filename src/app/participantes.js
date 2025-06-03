@@ -9,10 +9,10 @@ export default function participantes() {
     const [isOpen2, setIsOpen2] = useState(false);
 
     return (
-        <div className="bg-[#F4F2F9] text-justify flex-row" >
-            <h2 className="text-3xl font-bold mb-6 text-[#1B0088] ml-0 md:ml-110 text-left">¿Quiénes pueden postular?</h2>
+        <div className="bg-[#F4F2F9] text-justify flex flex-col mb-5" >
+            <h2 className="text-5xl font-bold mb-6 text-[#1B0088] mx-auto text-left">¿Quiénes pueden postular?</h2>
             <div className="flex items-center justify-center">
-                <p className="text-lg text-gray-900 max-w-3xl">
+                <p className="text-xl text-gray-900 max-w-5xl">
                     El programa Despegamos con Impacto está dirigido exclusivamente a organizaciones sin
                     fines de lucro con operaciones en el Perú, que busquen fortalecer sus capacidades
                     institucionales y llevar su impacto al siguiente nivel. Las postulaciones podrán hacerse en
@@ -20,7 +20,7 @@ export default function participantes() {
                 </p>
             </div>
 
-            <div className="w-full max-w-6xl mx-auto rounded-xl shadow-md border-[#233e8b] border-2 bg-white my-10">
+            <div className="w-full max-w-6xl mx-auto rounded-xl shadow-md border-[#233e8b] border-2 bg-white my-5">
                 {/* Header del dropdown */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -62,7 +62,7 @@ export default function participantes() {
                 </div>
             </div>
 
-            <div className="w-full max-w-6xl mx-auto rounded-xl shadow-md border-[#233e8b] border-2 bg-white my-10">
+            <div className="w-full max-w-6xl mx-auto rounded-xl shadow-md border-[#233e8b] border-2 bg-white my-5">
                 {/* Header del dropdown */}
                 <button
                     onClick={() => setIsOpen2(!isOpen2)}
