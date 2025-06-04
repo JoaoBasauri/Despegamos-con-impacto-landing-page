@@ -68,7 +68,7 @@ export default function Landing() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-200">
+                <div className="grid grid-cols-2 md:grid-cols-6 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-315">
                     <a href="#categoria" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Categorías
                     </a>
@@ -81,17 +81,14 @@ export default function Landing() {
                     <a href="#mentor" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Mentores
                     </a>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-148">
                     <a href="#postulacion" className="inline-block bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Postulación
                     </a>
                     <a href="#cronograma" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Cronograma
                     </a>
-                    <a href="#faq" className="col-span-2 md:col-span-1 mx-25 md:mx-0 bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
-                        FAQs
-                    </a>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-2 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-95">
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
                     <div className="flex flex-col md:flex-row items-center gap-2 md:rounded-full rounded-4xl">
@@ -124,7 +121,8 @@ export default function Landing() {
                         sostenible y transformador a largo plazo.
                     </p>
                     <p className="text-xl text-white leading-relaxed max-w-6xl">
-                        Despegamos con Impacto nace para fortalecer ONGs peruanas para que puedan despegar su impacto
+                        Despegamos con Impacto es una iniciativa de LATAM Airlines que nace para fortalecer Organizaciones no Gubernamentales peruanas
+                        de la mano con la Fundación Oli. Este concurso busca que las ONGs puedan despegar su impacto
                         social, a través del fortalecimiento institucional, brindándoles herramientas clave para:
                     </p>
 
@@ -162,7 +160,7 @@ export default function Landing() {
                 <h2 className="text-5xl font-bold mb-6 text-[#290087] text-center">Conoce nuestras Categorías</h2>
 
                 <div className="grid md:grid-cols-[500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
-                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoría 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoría 1: Primer Vuelo</h3>
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
                     <Image
                         src={"/despegamos-con-impacto/despegue.svg"}
@@ -237,17 +235,17 @@ export default function Landing() {
                 </p>
 
                 <div className="grid md:grid-cols-2 md:grid-rows-[50_300]  justify-items-center justify-center items-center">
-                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoría 1: Despegue inicial</h3>
+                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoría 1: Primer Vuelo</h3>
                     <h3 className="text-2xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
                     <ul className="text-xl text-white max-w-150 mb-2 list-disc">
-                        <li><a className="font-semibold">Capital semilla de S/ 15,000</a> para el fortalecimiento institucional o ejecución de un
+                        <li><a className="font-semibold">Capital semilla de S/ 15,000</a>, otorgado por LATAM Airlines, para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</li>
                         <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
                             2026) en temas de finanzas e impacto.</li>
                         <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
                     </ul>
                     <ul className="text-xl text-white max-w-150 mb-2 row-start-5 md:row-auto list-disc">
-                        <li><a className="font-semibold">Capital semilla de S/ 25,000</a> para el fortalecimiento institucional o ejecución de un
+                        <li><a className="font-semibold">Capital semilla de S/ 25,000</a>, otorgado por LATAM Airlines, para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</li>
                         <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
                             2026) en temas de finanzas e impacto.</li>
