@@ -15,7 +15,7 @@ export default function Landing() {
                     <div className="flex flex-col order-2 md:flex-row md:justify-center items-center gap-1 md:gap-8">
                         <h1 className="font-bold text-2xl md:text-4xl">Concurso</h1>
                         <a
-                            href="/despegamos-con-impacto/pdf/Bases del concurso - Despegamos con Impacto.pdf"
+                            href="/pdf/Bases del concurso - Despegamos con Impacto.pdf"
                             target="_blank"
                             className="flex items-center gap-1 md:gap-2 uppercase bg-[#ffaf0100] border-2 hover:text-white font-semibold px-5 py-3 md:px-8 md:py-5 rounded-full hover:bg-gray-900 transition"
                         >
@@ -29,7 +29,7 @@ export default function Landing() {
                             target="_blank"
                         >
                             <Image
-                                src="/despegamos-con-impacto/Latam-logo.svg"
+                                src="/Latam-logo.svg"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -41,7 +41,7 @@ export default function Landing() {
                             target="_blank"
                         >
                             <Image
-                                src="/despegamos-con-impacto/LOGO_Oli.png"
+                                src="/LOGO_Oli.png"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -53,7 +53,7 @@ export default function Landing() {
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:py-0">
                     <Image
-                        src="/despegamos-con-impacto/logo.png"
+                        src="/logo.png"
                         width={500}
                         height={500}
                         alt="Despegamos con impacto"
@@ -98,7 +98,7 @@ export default function Landing() {
                             <FaPen size={13} />
                             Postula Aquí
                         </a>
-                        <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
+                        <a href="/pdf/Guía de preguntas.pdf"
                             target="_blank"
                             className="flex items-center justify-center min-w-60 gap-2 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
@@ -128,21 +128,21 @@ export default function Landing() {
 
                     <div className="bg-[#1B0088] grid md:grid-cols-3 md:grid-rows-[200_100] justify-center justify-items-center items-start ">
                         <Image
-                            src={"/despegamos-con-impacto/TF-icon.svg"}
+                            src={"/TF-icon.svg"}
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
                             className="mb-6 md:mb-0"
                         />
                         <Image
-                            src={"/despegamos-con-impacto/EC-icon.svg"}
+                            src={"/EC-icon.svg"}
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
                             className="mb-6 md:mb-0 row-start-3 md:row-auto"
                         />
                         <Image
-                            src={"/despegamos-con-impacto/ST-icon.svg"}
+                            src={"/ST-icon.svg"}
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
@@ -163,14 +163,14 @@ export default function Landing() {
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoría 1: Primer Vuelo</h3>
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
                     <Image
-                        src={"/despegamos-con-impacto/despegue.svg"}
+                        src={"/despegue.svg"}
                         width={400}
                         height={400}
                         alt="Transparencia Financiera"
                         className="mb-6 md:mb-0"
                     />
                     <Image
-                        src={"/despegamos-con-impacto/vuelo.svg"}
+                        src={"/vuelo.svg"}
                         width={400}
                         height={400}
                         alt="Transparencia Financiera"
@@ -292,7 +292,7 @@ export default function Landing() {
                             <FaPen size={13} />
                             Postula Aquí
                         </a>
-                        <a href="/despegamos-con-impacto/pdf/Guía de preguntas.pdf"
+                        <a href="/pdf/Guía de preguntas.pdf"
                             target="_blank"
                             className="flex justify-center items-center gap-2 lg:min-w-80 min-w-60 md:my-2 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaFile size={13} />
@@ -456,7 +456,7 @@ export default function Landing() {
                 <div className="flex flex-col md:flex-row md:justify-center items-center -mb-5 gap-5 md:gap-8 text-left">
                     <h1 className="text-3xl font-bold text-[#290087] ml-0  text-left">Encuentra nuestras Preguntas Frecuentes (FAQs) aquí: </h1>
                     <a
-                        href="/despegamos-con-impacto/pdf/faq.pdf"
+                        href="/pdf/faq.pdf"
                         target="_blank"
                         className="flex justify-center items-center gap-2 min-w-80 md:my-2 md:mr-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition "
                     >
@@ -535,7 +535,7 @@ export default function Landing() {
 
                         >
                             <Image
-                                src="/despegamos-con-impacto/Latam-logo.svg"
+                                src="/Latam-logo.svg"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -547,7 +547,7 @@ export default function Landing() {
                             target="_blank"
                         >
                             <Image
-                                src="/despegamos-con-impacto/LOGO_Oli.png"
+                                src="/LOGO_Oli.png"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
