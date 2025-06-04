@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Participantes from './participantes'
+import Head from 'next/head';
 import { FaArrowAltCircleDown, FaPen, FaFile } from "react-icons/fa"
 import { FaChevronUp } from "react-icons/fa"
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
@@ -8,10 +9,31 @@ import { FaXTwitter, FaYoutube } from "react-icons/fa6"
 export default function Landing() {
     return (
         <div className="font-[Open_sans] text-gray-900 bg-[#F4F2F9] min-w-full">
+            <Head>
+                <title>Despegamos con Impacto | Fortalecimiento de ONGs en Perú</title>
+                <meta name="description" content="Una iniciativa de LATAM Airlines y Fundación Oli para fortalecer ONGs peruanas. Brindamos herramientas, conocimiento y acompañamiento para que tu impacto social sea sostenible y transformador." />
+                <meta name="keywords" content="ONGs, Perú, impacto social, LATAM Airlines, Fundación Oli, fortalecimiento institucional, concurso social, desarrollo social" />
+                <meta name="author" content="LATAM Airlines y Fundación Oli" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://despegamos-con-impacto.olifoundation.org" />
+
+                {/* Open Graph (Facebook, LinkedIn, etc.) */}
+                <meta property="og:title" content="Despegamos con Impacto | Fortalecimiento de ONGs en Perú" />
+                <meta property="og:description" content="Concurso impulsado por LATAM Airlines y Fundación Oli para que ONGs peruanas eleven su impacto a largo plazo." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://despegamos-con-impacto.olifoundation.org" />
+                <meta property="og:image" content="https://despegamos-con-impacto.olifoundation.org/logo.png" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Despegamos con Impacto" />
+                <meta name="twitter:description" content="Fortalecimiento institucional de ONGs peruanas impulsado por LATAM Airlines y Fundación Oli." />
+                <meta name="twitter:image" content="https://despegamos-con-impacto.olifoundation.org/logo.png" />
+            </Head>
 
             {/* Hero Section */}
             <section id="inicio" className="bg-[#F4F2F9] pt-15 pb-10 text-gray-900 overflow-hidden">
-                <div className="flex flex-col md:flex-row md:justify-around items-center -mb-5   md:mb-10 gap-5 md:gap-1">
+                <div className="flex flex-col md:flex-row md:justify-around items-center -mb-5 md:mb-10 gap-5 md:gap-1">
                     <div className="flex flex-col order-2 md:flex-row md:justify-center items-center gap-1 md:gap-8">
                         <h1 className="font-bold text-2xl md:text-4xl">Concurso</h1>
                         <a
@@ -30,6 +52,7 @@ export default function Landing() {
                         >
                             <Image
                                 src="/Latam-logo.svg"
+                                loading="lazy"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -42,6 +65,7 @@ export default function Landing() {
                         >
                             <Image
                                 src="/LOGO_Oli.png"
+                                loading="lazy"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -54,6 +78,7 @@ export default function Landing() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:py-0">
                     <Image
                         src="/logo.png"
+                        loading="lazy"
                         width={500}
                         height={500}
                         alt="Despegamos con impacto"
@@ -129,6 +154,7 @@ export default function Landing() {
                     <div className="bg-[#1B0088] grid md:grid-cols-3 md:grid-rows-[200_100] justify-center justify-items-center items-start ">
                         <Image
                             src={"/TF-icon.svg"}
+                            loading="lazy"
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
@@ -136,6 +162,7 @@ export default function Landing() {
                         />
                         <Image
                             src={"/EC-icon.svg"}
+                            loading="lazy"
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
@@ -143,6 +170,7 @@ export default function Landing() {
                         />
                         <Image
                             src={"/ST-icon.svg"}
+                            loading="lazy"
                             width={400}
                             height={400}
                             alt="Transparencia Financiera"
@@ -164,6 +192,7 @@ export default function Landing() {
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
                     <Image
                         src={"/despegue.svg"}
+                        loading="lazy"
                         width={400}
                         height={400}
                         alt="Transparencia Financiera"
@@ -171,6 +200,7 @@ export default function Landing() {
                     />
                     <Image
                         src={"/vuelo.svg"}
+                        loading="lazy"
                         width={400}
                         height={400}
                         alt="Transparencia Financiera"
@@ -536,6 +566,7 @@ export default function Landing() {
                         >
                             <Image
                                 src="/Latam-logo.svg"
+                                loading="lazy"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
@@ -548,6 +579,7 @@ export default function Landing() {
                         >
                             <Image
                                 src="/LOGO_Oli.png"
+                                loading="lazy"
                                 width={200}
                                 height={200}
                                 alt="Despegamos con impacto"
