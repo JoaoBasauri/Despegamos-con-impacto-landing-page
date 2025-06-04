@@ -27,7 +27,7 @@ export default function participantes() {
                     className="flex justify-between items-center w-full px-4 py-3 text-left font-semibold text-[#233e8b] rounded-xl hover:bg-gray-100"
                 >
                     <div>
-                        <span>Categoria 1: Primer despegue</span>
+                        <span>Categoría 1: Primer Vuelo</span>
                         <p className="text-gray-600 text-sm opacity-80 mt-1">Para ONGs en etapa de consolidación (2+ años)</p>
                     </div>
                     {isOpen ? <FaChevronUp className="w-5 h-5" /> : <FaChevronDown className="w-5 h-5" />}
@@ -69,7 +69,7 @@ export default function participantes() {
                     className="flex justify-between items-center w-full px-4 py-3 text-left font-semibold text-[#233e8b] rounded-xl hover:bg-gray-100"
                 >
                     <div>
-                        <span>Categoria 2: Vuelo en curso</span>
+                        <span>Categoría 2: Vuelo en curso</span>
                         <p className="text-gray-600 text-sm opacity-80 mt-1">Para ONGs consolidadas que buscan escalar (5+ años)</p>
                     </div>
                     {isOpen2 ? <FaChevronUp className="w-5 h-5" /> : <FaChevronDown className="w-5 h-5" />}
