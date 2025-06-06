@@ -51,7 +51,7 @@ export default function Landing() {
                             target="_blank"
                         >
                             <Image
-                                src="/Latam-logo.svg"
+                                src="/Latam-logo.png"
                                 loading="lazy"
                                 width={200}
                                 height={200}
@@ -565,7 +565,7 @@ export default function Landing() {
 
                         >
                             <Image
-                                src="/Latam-logo.svg"
+                                src="/Latam-logo.png"
                                 loading="lazy"
                                 width={200}
                                 height={200}
