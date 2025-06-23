@@ -358,8 +358,8 @@ export default function Landing() {
                         definir una hoja de ruta básica para la implementación de dicho proyecto e identificar sus desafíos internos y
                         posibles caminos de mejora.</p>
                 </div>
-                <div className="md:grid grid-cols-2 grid-rows-[50_auto] justify-center items-start md:mx-50">
-                    <div className="row-start-1 text-[#FF3E78] font-semibold text-4xl mb-10 md:mr-10">
+                <div className="md:grid grid-cols-2 grid-rows-[100_auto] justify-center items-start md:mx-50">
+                    <div className="row-start-1 text-[#FF3E78] font-semibold text-4xl mb-10 md:mr-10 my-auto">
                         <h3 className="text-center">¿A quiénes buscamos?</h3>
                     </div>
                     <div className="flex flex-col gap-3 row-start-2 mb-5 md:mr-10 text-gray-900 text-xl">
@@ -371,7 +371,7 @@ export default function Landing() {
                             estratégica.</li>
                         <li> Se valora experiencia en mentoría o facilitación participativa (no excluyente).</li>
                     </div>
-                    <div className="row-start-1 text-[#FF3E78] font-semibold text-4xl  mb-10 md:mr-10">
+                    <div className="row-start-1 text-[#FF3E78] font-semibold text-4xl  mb-10 md:mr-10 my-auto">
                         <h3 className="text-center">Beneficios</h3>
                     </div>
                     <div className="row-start-2 flex flex-col gap-3 md:mr-10 text-gray-900 text-xl">
