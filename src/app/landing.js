@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Participantes from './participantes'
+import Galeria from "./galeria";
 import Head from 'next/head';
 import { FaArrowAltCircleDown, FaPen, FaFile } from "react-icons/fa"
 import { FaChevronUp } from "react-icons/fa"
@@ -86,18 +87,19 @@ export default function Landing() {
                     />
                     <div className="flex-row items-center justify-center text-left">
                         <p className="text-m md:text-m max-w-2xl mx-auto">
-                            LATAM Airlines Perú y Fundación OLI lanzan Despegamos con Impacto, una convocatoria
-                            nacional que reconoce y fortalece el trabajo de organizaciones sociales en el Perú.
-                            Buscamos impulsar su crecimiento sostenible con herramientas, conocimiento y
-                            acompañamiento para que su impacto llegue más lejos.
+                            LATAM Airlines Perú y Fundación OLI presentan Despegamos con Impacto por segundo año consecutivo,
+                            una convocatoria nacional que impulsa a organizaciones sociales que están cambiando realidades en el Perú.
+                            Mediante formación, acompañamiento, conexiones estratégicas y capital semilla,
+                            buscamos fortalecer su capacidad de acción para que su impacto llegue más lejos,
+                            amplíe oportunidades y genere cambios sostenibles en más comunidades.
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-6 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-315">
+                <div className="grid grid-cols-2 md:grid-cols-7 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-315">
                     <a href="#categoria" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Categorías
                     </a>
-                    <a href="#participante" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                    <a href="#participante" className="bg-[#290087] text-[#FFFFFF] font-semibold px-1 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Participantes
                     </a>
                     <a href="#premio" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
@@ -106,18 +108,21 @@ export default function Landing() {
                     <a href="#mentor" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Mentores
                     </a>
-                    <a href="#postulacion" className="inline-block bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                    <a href="#postulacion" className="inline-block bg-[#290087] text-[#FFFFFF] font-semibold px-1 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Postulación
                     </a>
-                    <a href="#cronograma" className="bg-[#290087] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                    <a href="#cronograma" className="bg-[#290087] text-[#FFFFFF] font-semibold px-1 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
                         Cronograma
+                    </a>
+                    <a href="#galeria" className="bg-[#290087] text-[#FFFFFF] font-semibold px-1 py-3 rounded-full hover:bg-[#233E8B] hover:text-[#ffffff] transition">
+                        Galería
                     </a>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-2 justify-around md:mx-auto m-5 md:mb-5 items-center text-center gap-5 md:gap-10 max-w-95">
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center md:gap-80 gap-10">
                     <div className="flex flex-col md:flex-row items-center gap-2 md:rounded-full rounded-4xl">
-                        <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq2vYwYxurc7BkM03uiA_X-ko9ho9ZOuU3i6VlfBLB8RWyDw/viewform?usp=publish-editor"
                             target="_blank"
                             className="flex items-center justify-center min-w-60 gap-2 md:my-2 md:ml-5 bg-[#FFB001] text-[#FFFFFF] font-semibold px-8 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaPen size={13} />
@@ -187,9 +192,10 @@ export default function Landing() {
             < section id="categoria" className="flex flex-col justify-center py-16 px-6 md:px-20 bg-[#F4F2F9]" >
                 <h2 className="text-5xl font-bold mb-6 text-[#290087] text-center">Conoce nuestras Categorías</h2>
 
-                <div className="grid md:grid-cols-[500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
+                <div className="grid md:grid-cols-[500_500_500] md:grid-rows-[50_250_275] justify-center justify-items-center items-start">
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] ">Categoría 1: Primer Vuelo</h3>
                     <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
+                    <h3 className="text-2xl font-semibold mb-6 text-[#290087] row-start-7 md:row-auto">Categoría 3: Conexión Territorial</h3>
                     <Image
                         src={"/despegue.svg"}
                         loading="lazy"
@@ -206,31 +212,51 @@ export default function Landing() {
                         alt="Transparencia Financiera"
                         className="mb-6 md:mb-0 row-start-5 md:row-auto"
                     />
-                    <div className="text-center">
-                        <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+                    <Image
+                        src={"/categoria_3.png"}
+                        loading="lazy"
+                        width={400}
+                        height={400}
+                        alt="Transparencia Financiera"
+                        className="mb-6 md:mb-0 row-start-8 md:row-auto max-w-40 md:max-w-60"
+                    />
+                    <div className="text-center mb-6 md:mb-0">
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2 ">
                             Dirigida a ONGs en etapa de consolidación que necesitan fortalecer sus capacidades
                             internas para operar con mayor transparencia, eficacia y sostenibilidad.
                         </p>
-                        <p className="text-lg text-gray-900 max-w-110 mb-2">
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2">
                             Esta categoría está pensada para organizaciones que ya se encuentran en marcha, pero
                             requieren orientación y herramientas para construir una base institucional sólida que les
                             permita sostenerse en el tiempo.
                         </p>
                     </div>
-                    <div className="text-center">
-                        <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+                    <div className="text-center mb-6 md:mb-0">
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2 ">
                             Pensada para ONGs con un mayor grado de consolidación que buscan profesionalizar sus
                             procesos o escalar su impacto, especialmente en medición, comunicación y sostenibilidad
                             financiera.
                         </p>
-                        <p className="text-lg text-gray-900 max-w-110 mb-2 ">
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2 ">
                             Esta categoría busca acompañar a organizaciones que ya tienen una estructura
                             consolidada, pero desean llevar su gestión y comunicación de impacto a un siguiente nivel.
                         </p>
                     </div>
+                    <div className="text-center mb-6 md:mb-0">
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2 ">
+                            Dirigida a organizaciones sociales con presencia e impacto en distintas regiones del país,
+                            que impulsan soluciones sostenibles desde sus territorios y contribuyen
+                            a la descentralización del desarrollo social.
+
+                        </p>
+                        <p className="text-justify text-lg text-gray-900 max-w-110 mb-2 ">
+                            Esta categoría busca fortalecer iniciativas con capacidad de articulación y crecimiento territorial,
+                             reconociendo los desafíos de sostenibilidad y gestión que implica
+                            generar impacto en múltiples comunidades del país.
+
+                        </p>
+                    </div>
                 </div>
-
-
             </section >
 
             {/* Premio Section */}
@@ -244,13 +270,13 @@ export default function Landing() {
                 <div className="grid md:grid-cols-3 gap-8 text-left my-12 text-xl">
                     <div className="flex flex-col bg-[#35A1F4] text-white p-4 rounded shadow justify-items-center">
                         <p className="font-semibold mt-auto">Capacitación especializada</p>
-                        <li className="mt-2 ">Transparencia financiera y contable.</li >
-                        <li className="mt-2 ">Evaluación de impacto de proyectos sociales.</li >
-                        <li className="mt-2 mb-auto">Comunicación efectiva para la movilización de recursos </li >
+                        <li className="mt-2 ml-4">Transparencia financiera y contable.</li >
+                        <li className="mt-2 ml-4">Evaluación de impacto de proyectos sociales.</li >
+                        <li className="mt-2 mb-auto ml-4">Comunicación efectiva para la movilización de recursos </li >
                     </div>
                     <div className="flex flex-col bg-[#FFFFFF] text-[#290087] p-4 rounded shadow justify-items-center">
                         <p className="font-semibold mt-auto">Mentoría personalizada</p>
-                        <p className="mt-2 mb-auto">Durante dos meses con profesionales expertos</p>
+                        <p className="mt-2 mb-auto">Durante un mes con profesionales expertos</p>
                     </div>
                     <div className="flex flex-col bg-[#3AB85C] text-white p-4 rounded shadow justify-items-center">
                         <p className="font-semibold mt-auto">Visibilización de su trabajo e impacto</p>
@@ -264,25 +290,35 @@ export default function Landing() {
                     frente a nuestro Comité de Expertos y ser acreedor del premio de su categoría.
                 </p>
 
-                <div className="grid md:grid-cols-2 md:grid-rows-[50_300]  justify-items-center justify-center items-center">
-                    <h3 className="text-2xl font-semibold my-6 text-white ">Categoría 1: Primer Vuelo</h3>
-                    <h3 className="text-2xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
-                    <ul className="text-xl text-white max-w-150 mb-2 list-disc">
+                <div className="grid md:grid-cols-3 md:grid-rows-[50_200] gap-x-15  justify-items-center justify-center items-center">
+                    <h3 className="text-xl font-semibold my-6 text-white ">Categoría 1: Primer Vuelo</h3>
+                    <h3 className="text-xl font-semibold my-6 text-white row-start-4 md:row-auto">Categoría 2: Vuelo en curso</h3>
+                    <h3 className="text-xl font-semibold my-6 text-white row-start-7 md:row-auto">Categoría 3: Conexión Territorial</h3>
+                    <ul className="text-10px text-white max-w-150 mb-2 list-disc ml-4 md:ml-0">
                         <li><a className="font-semibold">Capital semilla de S/ 15,000</a>, otorgado por LATAM Airlines, para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</li>
-                        <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
-                            2026) en temas de finanzas e impacto.</li>
+                        <li><a className="font-semibold">Acompañamiento técnico especializado por 4 meses</a> (octubre 2026 - enero
+                            2027) en temas de finanzas e impacto.</li>
                         <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
                     </ul>
-                    <ul className="text-xl text-white max-w-150 mb-2 row-start-5 md:row-auto list-disc">
+                    <ul className="text-10px text-white max-w-150 mb-2 row-start-5 md:row-auto list-disc ml-4 md:ml-0">
+                        <li><a className="font-semibold">Capital semilla de S/ 20,000</a>, otorgado por LATAM Airlines, para el fortalecimiento institucional o ejecución de un
+                            proyecto de mejora organizacional.</li>
+                        <li><a className="font-semibold">Acompañamiento técnico especializado por 5 meses</a> (octubre 2026 - febrero
+                            2027) en temas de finanzas e impacto.</li>
+                        <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
+                    </ul>
+                    <ul className="text-10px text-white max-w-150 mb-2 row-start-8 md:row-auto list-disc ml-4 md:ml-0">
                         <li><a className="font-semibold">Capital semilla de S/ 25,000</a>, otorgado por LATAM Airlines, para el fortalecimiento institucional o ejecución de un
                             proyecto de mejora organizacional.</li>
-                        <li><a className="font-semibold">Acompañamiento técnico especializado por 3 meses</a> (noviembre 2025 - enero
-                            2026) en temas de finanzas e impacto.</li>
+                        <li><a className="font-semibold">Acompañamiento técnico especializado por 6 meses</a> (octubre 2026 - marzo
+                            2027) en temas de finanzas e impacto.</li>
                         <li><a className="font-semibold">Reconocimiento público</a> en evento de cierre y <a className="font-semibold"> certificado oficial.</a></li>
                     </ul>
                 </div>
             </section >
+
+
             {/* Participantes Section*/}
             < section id="participante" className="py-16 px-6 md:px-20 bg-[#F4F2F9]">
                 <Participantes />
@@ -316,7 +352,7 @@ export default function Landing() {
                         </div>
                     </div>
                     <div className="flex flex-col 2xl:flex-row justify-center items-center gap-2 mt-5">
-                        <a href="https://forms.gle/AUoQS5aRp8C4Dt656"
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq2vYwYxurc7BkM03uiA_X-ko9ho9ZOuU3i6VlfBLB8RWyDw/viewform?usp=publish-editor"
                             target="_blank"
                             className="flex justify-center items-center gap-2 lg:min-w-80 min-w-60 md:my-2 bg-[#FFB001] text-[#FFFFFF] font-semibold px-18 py-3 rounded-full hover:bg-[#233E8B] hover:text-white transition">
                             <FaPen size={13} />
@@ -331,7 +367,7 @@ export default function Landing() {
                     </div>
                     <div className="flex flex-col mx-auto gap-2">
                         <h3 className="font-bold text-3xl mt-5 md:-mt-5">Criterios de evaluación</h3>
-                        <div className="-indent-7 ml-5 md:ml-15 text-2xl text-left">
+                        <div className="-indent-2 ml-5 md:ml-15 text-2xl text-left">
                             <li>Criterio 1: Capacidad de gestión y sostenibilidad </li>
                             <li>Criterio 2: Claridad de misión y objetivos de la ONG </li>
                             <li>Criterio 3: Potencial de impacto social </li>
@@ -422,11 +458,10 @@ export default function Landing() {
                                     <td colSpan="4" className="py-2 px-4 font-semibold italic">Proceso de convocatoria</td>
                                 </tr>
                                 {[
-                                    ['Lanzamiento del concurso', '8 de junio', '-'],
-                                    ['Postulaciones de organizaciones', '8 de junio', '19 de julio'],
-                                    ['Postulación de mentores', '8 de junio', '19 de julio'],
-                                    ['Evaluación de postulaciones', '20 de julio', '10 de agosto'],
-                                    ['Publicación de finalistas y mentores', '13 de agosto', '13 de agosto'],
+                                    ['Lanzamiento del concurso', '16 de junio', '-'],
+                                    ['Postulaciones de organizaciones', '16 de junio', '17 de julio'],
+                                    ['Evaluación de postulaciones', '20 de julio', '31 de julio'],
+                                    ['Publicación de finalistas y mentores', '12 de agosto', '-'],
                                 ].map((row, i) => (
                                     <tr key={`convocatoria-${i}`} className="border-t border-black">
                                         {row.map((cell, j) => (
@@ -442,16 +477,14 @@ export default function Landing() {
                                     </td>
                                 </tr>
                                 {[
-                                    ['Kick off mentores', '18 de agosto', '24 de agosto'],
-                                    ['Bienvenida finalistas', '18 de agosto', '24 de agosto'],
-                                    ['Sesión Módulo 1', '25 de agosto', '31 de agosto'],
-                                    ['Semana de mentorías 1', '1 de septiembre', '7 de septiembre'],
-                                    ['Sesión Módulo 2', '8 de septiembre', '14 de septiembre'],
-                                    ['Semana de mentorías 2', '15 de septiembre', '21 de septiembre'],
-                                    ['Sesión Módulo 3', '22 de septiembre', '28 de septiembre'],
-                                    ['Semana de mentoría 3', '29 de septiembre', '5 de octubre'],
-                                    ['Semana de mentoría 4', '6 de octubre', '12 de octubre'],
-                                    ['Semana de mentoría 5', '13 de octubre', '17 de octubre'],
+                                    ['Kick off mentores', '10 de julio', '-'],
+                                    ['Sesión Módulo 1', '19 de agosto', '-'],
+                                    ['Semana de mentorías 1', '17 de agosto', '23 de agosto'],
+                                    ['Sesión Módulo 2', '26 de agosto', '-'],
+                                    ['Semana de mentorías 2', '24 de agosto', '30 de agosto'],
+                                    ['Sesión Módulo 3', '02 de septiembre', '-'],
+                                    ['Semana de mentoría 3', '31 de agosto', '06 de septiembre'],
+                                    ['Semana de mentoría 4', '07 de septiembre', '11 de septiembre'],
                                 ].map((row, i) => (
                                     <tr key={`capacitacion-${i}`} className="border-t border-black">
                                         {row.map((cell, j) => (
@@ -465,8 +498,8 @@ export default function Landing() {
                                     <td colSpan="4" className="py-2 px-4 font-semibold italic">Selección de ganadores</td>
                                 </tr>
                                 {[
-                                    ['Presentación de proyectos', 'Tercera semana de Octubre', '-'],
-                                    ['Ceremonia de premiación', 'Última semana de octubre', '-'],
+                                    ['Presentación de proyectos', '12 de septiembre'],
+                                    ['Ceremonia de premiación', 'Entre el 24 y 26 de septiembre'],
                                 ].map((row, i) => (
                                     <tr key={`ganadores-${i}`} className="border-t border-black">
                                         {row.map((cell, j) => (
@@ -479,6 +512,11 @@ export default function Landing() {
                     </div>
                 </div>
 
+            </section>
+
+            {/*Galeria section */}
+            <section id="galeria" className="py-16 px-6 md:px-20 bg-[#F4F2F9] text-left">
+                <Galeria />
             </section>
 
             {/*FAQ section */}
@@ -589,8 +627,8 @@ export default function Landing() {
                 </div>
                 <div className="flex flex-col md:flex-row justify-around items-center gap-2 md:gap-10 min-w-full">
                     <div>
-                        <p className="md:text-normal">© Todos los derechos reservados 2025. Fundación Oli</p>
-                        <p className="md:text-normal">© 2025 LATAM Airlines Perú S.A. RUC: 20341841357</p>
+                        <p className="md:text-normal">© Todos los derechos reservados 2026. Fundación Oli</p>
+                        <p className="md:text-normal">© 2026 LATAM Airlines Perú S.A. RUC: 20341841357</p>
                     </div>
                     <div>
                         <p className="">Desarrollado por Joao Basauri</p>
