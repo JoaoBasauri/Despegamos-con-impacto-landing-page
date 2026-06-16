@@ -5,8 +5,6 @@ import Image from "next/image"
 
 // ─── DATOS ───────────────────────────────────────────────────────────────────
 
-// Agrega este estado junto a los demás
-
 const galeria = {
     categoria1: {
         label: "Categoría 1: Primer Vuelo",
@@ -19,9 +17,9 @@ const galeria = {
 }
 
 const videos = [
-    { src: "/galeria/videos/participantes.mp4", titulo: "Testimonios de finalistas"},
-    { src: "/galeria/videos/ceremonia.mp4", titulo: "Ceremonia de premiación"},
-    { src: "/galeria/videos/ganadores.mp4", titulo: "Testimonios de los ganadores"},
+    { driveId: "1nEj2hspoleu5PkRfbiak4L5C8T3Oxl4Z", titulo: "Testimonios de finalistas" },
+    { driveId: "14e5CFd-nscPeLJiswKRzxK5p3JRt4Xqj", titulo: "Ceremonia de premiación" },
+    { driveId: "1UezlPxkYavS_j7uSpzICA8pB8IsK04ve", titulo: "Testimonios de los ganadores" },
 ]
 
 // ─── FALLBACK ────────────────────────────────────────────────────────────────
@@ -38,6 +36,7 @@ function FotoFallback({ numero }) {
         </div>
     )
 }
+
 function FotoConFallback({ src, alt, numero, fill, className, onClick }) {
     const [error, setError] = useState(false)
 
@@ -140,21 +139,17 @@ export default function Galeria() {
                                 fill
                                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                             />
-                            {/* Flecha izquierda */}
                             <button
                                 onClick={(e) => { e.stopPropagation(); prev() }}
                                 className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition"
                             >‹</button>
-                            {/* Flecha derecha */}
                             <button
                                 onClick={(e) => { e.stopPropagation(); next() }}
                                 className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl transition"
                             >›</button>
-                            {/* Contador */}
                             <span className="absolute bottom-3 right-4 bg-black/50 text-white text-xs px-3 py-1 rounded-full">
                                 {fotoActual + 1} / {fotos.length}
                             </span>
-                            {/* Hint lightbox */}
                             <span className="absolute bottom-3 left-4 bg-black/50 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
                                 🔍 Click para ampliar
                             </span>
@@ -194,10 +189,11 @@ export default function Galeria() {
                             className="flex flex-col rounded-2xl overflow-hidden shadow-md bg-white cursor-pointer group"
                             onClick={() => setLightboxVideo(i)}
                         >
+                            {/* Thumbnail de YouTube */}
                             <div className="relative h-48 bg-black overflow-hidden">
-                                <video
-                                    src={video.src}
-                                    preload="metadata"
+                                <img
+                                    src={`https://drive.google.com/thumbnail?id=${video.driveId}&sz=w800`}
+                                    alt={video.titulo}
                                     className="w-full h-full object-cover"
                                 />
                                 {/* Overlay play */}
@@ -215,7 +211,7 @@ export default function Galeria() {
                 </div>
             )}
 
-            {/* ── LIGHTBOX ── */}
+            {/* ── LIGHTBOX FOTOS ── */}
             {lightbox !== null && (
                 <div
                     className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
@@ -262,12 +258,13 @@ export default function Galeria() {
                         className="relative w-full max-w-4xl aspect-video"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <video
-                            src={videos[lightboxVideo].src}
-                            poster={videos[lightboxVideo].poster}
-                            controls
-                            autoPlay
-                            className="w-full h-full rounded-2xl bg-black"
+                        <iframe
+                            src={`https://drive.google.com/file/d/${videos[lightboxVideo].driveId}/preview`}
+                            title={videos[lightboxVideo].titulo}
+                            frameBorder="0"
+                            allow="autoplay"
+                            allowFullScreen
+                            className="w-full h-full rounded-2xl"
                         />
                         <button
                             onClick={() => setLightboxVideo(null)}
