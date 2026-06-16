@@ -261,7 +261,7 @@ export default function Landing() {
 
             {/* Premio Section */}
             < section id="premio" className="py-16 px-6 md:px-20 bg-[#290087] text-left" >
-                <h2 className="text-5xl font-semibold mb-6 text-[#ff3e78]">¡Serán 10 los finalistas y 2 ganadores!</h2>
+                <h2 className="text-5xl font-semibold mb-6 text-[#ff3e78]">¡Serán 12 los finalistas y 3 ganadores!</h2>
                 <p className="text-2xl text-white max-w-full mb-8  ">
                     Cinco organizaciones por categoría serán seleccionadas para acceder a un proceso
                     exclusivo de fortalecimiento que incluye:
