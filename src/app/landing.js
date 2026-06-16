@@ -264,7 +264,7 @@ export default function Landing() {
                 <h2 className="text-5xl font-semibold mb-6 text-[#ff3e78]">¡Serán 12 los finalistas y 3 ganadores!</h2>
                 <p className="text-2xl text-white max-w-full mb-8  ">
                     Cuatro organizaciones por categoría serán seleccionadas para acceder a un proceso
-                    exclusivo de fortalecimiento que incluye: ets
+                    exclusivo de fortalecimiento que incluye:
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8 text-left my-12 text-xl">
