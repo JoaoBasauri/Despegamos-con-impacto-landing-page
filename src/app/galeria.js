@@ -189,14 +189,12 @@ export default function Galeria() {
                             className="flex flex-col rounded-2xl overflow-hidden shadow-md bg-white cursor-pointer group"
                             onClick={() => setLightboxVideo(i)}
                         >
-                            {/* Thumbnail de YouTube */}
                             <div className="relative h-48 bg-black overflow-hidden">
                                 <img
                                     src={`https://drive.google.com/thumbnail?id=${video.driveId}&sz=w800`}
                                     alt={video.titulo}
                                     className="w-full h-full object-cover"
                                 />
-                                {/* Overlay play */}
                                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition flex items-center justify-center">
                                     <div className="w-14 h-14 rounded-full bg-[#FF3E78] flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
@@ -255,24 +253,29 @@ export default function Galeria() {
                     onClick={() => setLightboxVideo(null)}
                 >
                     <div
-                        className="relative w-full max-w-4xl aspect-video"
+                        className="relative w-full max-w-4xl"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <iframe
-                            src={`https://drive.google.com/file/d/${videos[lightboxVideo].driveId}/preview?rm=minimal`}
-                            title={videos[lightboxVideo].titulo}
-                            frameBorder="0"
-                            allow="autoplay"
-                            allowFullScreen
-                            className="w-full h-full rounded-2xl"
-                        />
+                        {/* Contenedor responsive 16:9 */}
+                        <div className="relative w-full rounded-2xl overflow-hidden" style={{ paddingTop: "56.25%" }}>
+                            <iframe
+                                src={`https://drive.google.com/file/d/${videos[lightboxVideo].driveId}/preview?rm=minimal`}
+                                title={videos[lightboxVideo].titulo}
+                                frameBorder="0"
+                                allow="autoplay"
+                                allowFullScreen
+                                className="absolute inset-0 w-full h-full"
+                            />
+                            {/* Oculta botón de ventana externa */}
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-black z-10" />
+                        </div>
                         <button
                             onClick={() => setLightboxVideo(null)}
                             className="absolute -top-12 right-0 bg-white/20 hover:bg-white/40 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl transition"
                         >
                             ✕
                         </button>
-                        <p className="absolute -bottom-10 left-0 text-white/70 text-sm">
+                        <p className="mt-3 left-0 text-white/70 text-sm">
                             {videos[lightboxVideo].titulo}
                         </p>
                     </div>
