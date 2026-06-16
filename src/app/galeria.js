@@ -266,8 +266,6 @@ export default function Galeria() {
                                 allowFullScreen
                                 className="absolute inset-0 w-full h-full"
                             />
-                            {/* Oculta botón de ventana externa */}
-                            <div className="absolute top-0 right-0 w-16 h-16 bg-black z-10" />
                         </div>
                         <button
                             onClick={() => setLightboxVideo(null)}
