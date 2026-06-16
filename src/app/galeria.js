@@ -259,7 +259,7 @@ export default function Galeria() {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <iframe
-                            src={`https://drive.google.com/file/d/${videos[lightboxVideo].driveId}/preview`}
+                            src={`https://drive.google.com/file/d/${videos[lightboxVideo].driveId}/preview?rm=minimal`}
                             title={videos[lightboxVideo].titulo}
                             frameBorder="0"
                             allow="autoplay"
